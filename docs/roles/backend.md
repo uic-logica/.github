@@ -5,7 +5,7 @@ You own everything in the [`backend`](https://github.com/uic-logica/backend) rep
 ## What you'll build
 - Prisma models for each feature as it comes online (profiles, feed, events, attendance, forms) — see [ROADMAP.md](../../ROADMAP.md) for the order.
 - Next.js API routes (App Router route handlers only — this repo is headless, no pages).
-- Passwordless auth restricted to the club's `.edu` email domain — no Google OAuth, no passwords; a one-time emailed code and/or a device passkey (WebAuthn) instead. Database sessions, role checks (`MEMBER` / `BOARD` / `EXEC_BOARD`) on anything that needs them. Exact mechanism is the backend owner's call — see backend#1.
+- Passwordless auth restricted to the club's `.edu` email domain — no Google OAuth, no passwords; a one-time emailed code and/or a device passkey (WebAuthn) instead. Database sessions, role checks (`MEMBER` / `BOARD` / `EXEC_BOARD`) on anything that needs them. Exact mechanism is the backend owner's call — see backend#10.
 
 ## What good looks like
 - `npm run lint` and `tsc --noEmit` pass locally before you open a PR — CI runs the same checks and blocks merge if they fail.
@@ -21,4 +21,4 @@ You own everything in the [`backend`](https://github.com/uic-logica/backend) rep
 5. Pick up an open issue on `backend` labeled `roadmap` (or `enhancement`/`bug` for anything else).
 
 ## Who to ask
-Reviews and merge decisions go through the repo's maintainers (CODEOWNERS). Auth/schema questions: check with whoever's working `backend#1` (auth onboarding) first — most other features build on top of it.
+Reviews and merge decisions go through the repo's maintainers (CODEOWNERS). Auth/schema questions: check with whoever's working `backend#10` (auth onboarding) first — most other features build on top of it.
