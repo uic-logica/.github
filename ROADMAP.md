@@ -4,6 +4,111 @@ How we're building LOGICA @ UIC, step by step. Steps are numbered because each o
 
 Each step's tracking issues live in the repo that does the work — check `frontend` and `backend` issues labeled `roadmap` for the current state.
 
+**The step numbers below are not issue numbers.** A step here describes one feature, and a feature usually needs work in both repos. Each repo does that work in its own order, with its own labels — `[FE 1]`, `[FE 2]`… on `frontend`, `[BE 1]`, `[BE 2]`… on `backend`. Every issue says which step it belongs to. The two lists below are those orders.
+
+## Frontend page order
+
+The frontend does not follow the step numbers below. It works **one page at a time, and the design is finished before any code is written**:
+
+1. **Design** the page in Figma, [Pencil](https://pen.dev), or equivalent — a real, complete mockup grounded in the art/interaction reference doc and that page's content doc. Not a rough draft to polish in code.
+2. **Share it** — a short `.md` in `frontend` with the link and a preview screenshot, PR'd, so it's reviewable without opening the design tool.
+3. **Build it** — implement the page directly from that finished design.
+4. **Then** start the next page.
+
+See [`frontend`'s DESIGN.md](https://github.com/uic-logica/frontend/blob/main/DESIGN.md) for the visual direction and the motion/performance bar.
+
+| # | Page | Issue | Roadmap step | Blocked by backend? |
+|---|------|-------|--------------|---------------------|
+| 0 | Art/interaction reference doc + a content doc per page | frontend#18, #19 | — | no |
+| 1 | Landing page | frontend#7 | Additions | no |
+| 2 | Team / roles page | frontend#8 | Additions | no |
+| 3 | Sign-in screen + session/role check | frontend#1 | Step 2 | yes — backend#10 |
+| 4 | Profile page | frontend#2 | Step 3 | yes — backend#2 |
+| 5 | Feed page + composer | frontend#3 | Step 4 | yes — backend#3 |
+| 6 | Calendar + event pages | frontend#4 | Step 5 | yes — backend#4 |
+| 7 | Attendance check-in + history | frontend#5 | Step 6 | yes — backend#5 |
+| 8 | Form renderer + the two forms | frontend#6 | Step 7 | yes — backend#6 |
+
+The remaining Additions (member spotlight, company-visit info page, cybersecurity showcase, sponsor wall) slot into this order whenever someone claims one — same design-then-build sequence.
+
+## Backend order
+
+| # | Work | Issue | Roadmap step | Status |
+|---|------|-------|--------------|--------|
+| 1 | Foundation: scaffold, CI, branch protection | backend#7 | Step 1 | done |
+| 2 | Passwordless auth + roles | backend#10, #11 | Step 2 | in progress |
+| 3 | Profiles: read/update + involvement summary | backend#2 | Step 3 | |
+| 4 | Feed: `Post` model + CRUD API | backend#3 | Step 4 | |
+| 5 | Events: `Event` model, RSVP, shareable-link data | backend#4 | Step 5 | |
+| 6 | Attendance: model + check-in endpoint | backend#5 | Step 6 | |
+| 7 | Forms: `Form`/`FormField`/`Submission` + API | backend#6 | Step 7 | |
+
+The frontend's first two pages need no backend, so backend#10 is not holding anyone up right now — build it properly rather than fast.
+
+## How the two teams work together
+
+Nobody should be sitting around stuck. If you are, this section says what to do instead.
+
+### What's waiting on what
+
+```mermaid
+graph LR
+  subgraph FE["frontend — drawing pages"]
+    D["draw any page<br/>(never gets stuck)"]
+  end
+  subgraph BE["backend"]
+    A["login system<br/>backend#10"] --> P["profiles<br/>backend#2"]
+    A --> F["feed posts<br/>backend#3"]
+    A --> E["events + RSVP<br/>backend#4"]
+    P --> AT["attendance<br/>backend#5"]
+    E --> AT
+    A --> FM["forms<br/>backend#6"]
+  end
+  D --> B1["code the landing page"]
+  D --> B2["code the team page"]
+  A --> B3["code the sign-in screen"]
+  P --> B4["code the profile page"]
+  F --> B5["code the feed page"]
+  E --> B6["code the calendar page"]
+  AT --> B7["code attendance check-in"]
+  FM --> B8["code the forms"]
+```
+
+### Almost everything is waiting on the login system
+
+Six of the eight frontend pages only make sense for someone who's signed in, so none of them can be finished until backend#10 is done. The landing page and the team page are the exceptions — they're public, anyone can see them, no login needed.
+
+That doesn't mean rush the login system. The next bit is why there's time.
+
+### Drawing a page and coding a page are two different jobs
+
+- **Drawing never gets stuck.** Any page can be drawn today. A mockup of the profile page doesn't need a working database behind it.
+- **Coding gets stuck.** A page can only be coded once its drawing is finished *and* the backend piece it needs exists.
+
+So day to day this should look like: the drawings stay a few pages ahead of the code. Eduardo and LizBCa keep drawing the next page; the backend builds pieces in the same order the pages are going to be coded. Nobody sits waiting.
+
+### The backend should build things in the same order the pages get coded
+
+Right now they match — profiles, then feed, then events on the backend lines up with the profile page, then the feed page, then the calendar page on the frontend. Keep it that way.
+
+If the frontend changes which page it's doing next, the backend changes to match, and the other way around. Otherwise one team finishes something the other can't use yet, while sitting stuck on something nobody built.
+
+### If you're stuck
+
+**Frontend, waiting on the backend:**
+1. Draw the next page. Drawing never gets stuck.
+2. Write the content doc for a page that doesn't have one yet.
+3. Go back to a page that's already coded and finish it properly — what it shows while it's loading, what it shows when there's nothing there yet, what it shows when something breaks, whether it works without a mouse, whether animations switch off for people who've asked for that in their system settings, and the speed target in DESIGN.md.
+4. Claim an Addition — nothing blocks those.
+5. **Don't fake the data to get moving.** File the backend issue, then pick something above.
+
+**Backend, waiting:**
+1. Move to the next thing on the backend list. Apart from the arrows in the picture above, those pieces don't depend on each other.
+2. Write tests for what's already merged — backend#11 shows the shape.
+3. Open the issue for the next piece, so the frontend can see what's coming.
+
+**Either team, stuck waiting on a person:** say so in the group chat *and* in the issue. If nobody can see you're stuck, nobody can unstick you.
+
 ## Step 1 — Foundation
 **Status: done.**
 GitHub org, `frontend` + `backend` repos, branch protection, CI (lint + typecheck + build on every PR), issue/PR templates, roles (Member/Reviewer/Maintainer/Owner).
@@ -13,7 +118,7 @@ GitHub org, `frontend` + `backend` repos, branch protection, CI (lint + typechec
 Members sign in with their UIC (`.edu`) email — no third-party OAuth (no "Sign in with Google"), and no passwords. Passwordless instead: a one-time code emailed to them, and/or a passkey saved to their device once they've set one up. The backend stores three membership roles: `MEMBER`, `BOARD`, `EXEC_BOARD`. Role decides what a member can see and do everywhere else in the app.
 
 - **Backend:** sign-in restricted to the UIC email domain, passwordless (one-time emailed code and/or WebAuthn passkey — no Google OAuth, no passwords), roles stored on the `User` model, database-backed sessions. The exact mechanism (code, passkey, or both) is the backend owner's call to make while building — see backend#10. The existing `auth.ts` was built on Google OAuth and needs reworking to match this.
-- **Frontend:** nothing yet. Waits on a working session from the backend before any page can check "who's logged in, what's their role."
+- **Frontend:** the sign-in screen and the session/role check — `[FE 3]`, frontend#1. The screen gets designed whenever; the build waits on a working session from the backend before any page can check "who's logged in, what's their role." The frontend's first two pages (landing, team) don't need this, so it isn't blocking frontend work today.
 
 Depends on: Step 1.
 
