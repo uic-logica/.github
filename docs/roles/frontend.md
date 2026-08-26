@@ -5,7 +5,7 @@ You own everything in the [`frontend`](https://github.com/uic-logica/frontend) r
 ## What you'll build
 - Pages: landing, team, feed, calendar/events, profiles, forms, spotlight, sponsor wall — see [ROADMAP.md](../../ROADMAP.md) for the order.
 - All auth, data, and member-specific content comes from the backend API (`NEXT_PUBLIC_API_URL`). The backend is the source of truth — don't store real data client-side, don't fake an API response to unblock yourself, open a `backend` issue instead.
-- Tailwind for styling.
+- Tailwind for styling, GSAP for orchestrated motion, Lottie for vector animation — see [`frontend`'s DESIGN.md](https://github.com/uic-logica/frontend/blob/main/DESIGN.md) for the actual visual direction, when to reach for which tool, and the performance bar.
 
 ## What good looks like
 - `npm run lint` and `tsc --noEmit` pass locally before you open a PR — CI runs the same checks and blocks merge if they fail.
