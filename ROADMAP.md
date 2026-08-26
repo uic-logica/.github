@@ -4,7 +4,7 @@ How we're building LOGICA @ UIC, step by step. Steps are numbered because each o
 
 Each step's tracking issues live in the repo that does the work — check `frontend` and `backend` issues labeled `roadmap` for the current state.
 
-**The step numbers here are not issue numbers.** A roadmap step describes a *feature* and usually spans both repos. Each repo works in its own order, tracked with its own prefix — `[FE n]` on `frontend`, `[BE n]` on `backend` — and every issue names the roadmap step it belongs to. The two sections below are those orders.
+**The step numbers below are not issue numbers.** A step here describes one feature, and a feature usually needs work in both repos. Each repo does that work in its own order, with its own labels — `[FE 1]`, `[FE 2]`… on `frontend`, `[BE 1]`, `[BE 2]`… on `backend`. Every issue says which step it belongs to. The two lists below are those orders.
 
 ## Frontend page order
 
@@ -45,69 +45,69 @@ The remaining Additions (member spotlight, company-visit info page, cybersecurit
 
 The frontend's first two pages need no backend, so backend#10 is not holding anyone up right now — build it properly rather than fast.
 
-## How the two teams move
+## How the two teams work together
 
-The point of this section: **nobody should ever be sitting blocked.** If you are, something below tells you what to pick up instead.
+Nobody should be sitting around stuck. If you are, this section says what to do instead.
 
-### The dependency map
+### What's waiting on what
 
 ```mermaid
 graph LR
-  subgraph FE["frontend — design lane (never blocked)"]
-    D["design any page<br/>FE 1 … FE 8"]
+  subgraph FE["frontend — drawing pages"]
+    D["draw any page<br/>(never gets stuck)"]
   end
   subgraph BE["backend"]
-    A["BE 2 auth<br/>backend#10"] --> P["BE 3 profiles"]
-    A --> F["BE 4 feed"]
-    A --> E["BE 5 events"]
-    P --> AT["BE 6 attendance"]
+    A["login system<br/>backend#10"] --> P["profiles<br/>backend#2"]
+    A --> F["feed posts<br/>backend#3"]
+    A --> E["events + RSVP<br/>backend#4"]
+    P --> AT["attendance<br/>backend#5"]
     E --> AT
-    A --> FM["BE 7 forms"]
+    A --> FM["forms<br/>backend#6"]
   end
-  D --> B1["FE 1 landing (build)"]
-  D --> B2["FE 2 team (build)"]
-  A --> B3["FE 3 sign-in (build)"]
-  P --> B4["FE 4 profile (build)"]
-  F --> B5["FE 5 feed (build)"]
-  E --> B6["FE 6 calendar (build)"]
-  AT --> B7["FE 7 attendance (build)"]
-  FM --> B8["FE 8 forms (build)"]
+  D --> B1["code the landing page"]
+  D --> B2["code the team page"]
+  A --> B3["code the sign-in screen"]
+  P --> B4["code the profile page"]
+  F --> B5["code the feed page"]
+  E --> B6["code the calendar page"]
+  AT --> B7["code attendance check-in"]
+  FM --> B8["code the forms"]
 ```
 
-### The one choke point
+### Almost everything is waiting on the login system
 
-**backend#10 (auth) gates six of the eight frontend pages.** Everything except landing and team sits behind it, directly or through a model that needs a logged-in user. It is the critical path — nothing else on the backend matters until it's real.
+Six of the eight frontend pages only make sense for someone who's signed in, so none of them can be finished until backend#10 is done. The landing page and the team page are the exceptions — they're public, anyone can see them, no login needed.
 
-That does *not* mean rush it. See the two lanes below for why there's slack right now.
+That doesn't mean rush the login system. The next bit is why there's time.
 
-### Two lanes, and only one of them can block
+### Drawing a page and coding a page are two different jobs
 
-The frontend runs a **design lane** and a **build lane**, and they don't move together:
+- **Drawing never gets stuck.** Any page can be drawn today. A mockup of the profile page doesn't need a working database behind it.
+- **Coding gets stuck.** A page can only be coded once its drawing is finished *and* the backend piece it needs exists.
 
-- **Design never blocks.** Any page can be designed today — landing, profile, forms, all of it. A mockup doesn't need an API. If the build lane is stuck, the design lane keeps moving ahead of it.
-- **Build blocks.** A page can only be built once its design is finished *and* its backend endpoint exists.
+So day to day this should look like: the drawings stay a few pages ahead of the code. Eduardo and LizBCa keep drawing the next page; the backend builds pieces in the same order the pages are going to be coded. Nobody sits waiting.
 
-So the healthy state is: designs run several pages ahead of builds, and the backend lands endpoints in the same order the builds are queued. That's the whole scheduling trick.
+### The backend should build things in the same order the pages get coded
 
-### Backend order mirrors frontend page order — keep it that way
+Right now they match — profiles, then feed, then events on the backend lines up with the profile page, then the feed page, then the calendar page on the frontend. Keep it that way.
 
-BE 3 → BE 4 → BE 5 unblocks FE 4 → FE 5 → FE 6, in that order. They currently line up. If the frontend reorders its pages, the backend reorders to match, and vice versa — otherwise one team ships work the other can't use yet while sitting blocked on work that wasn't prioritized.
+If the frontend changes which page it's doing next, the backend changes to match, and the other way around. Otherwise one team finishes something the other can't use yet, while sitting stuck on something nobody built.
 
-### If you're blocked
+### If you're stuck
 
-**Frontend, waiting on an endpoint:**
-1. Design the next page in the order — the design lane is never blocked.
-2. Write the page's content doc if it doesn't have one.
-3. Polish a page already built: loading / empty / error states, keyboard nav, `prefers-reduced-motion` fallbacks, the Lighthouse bar in DESIGN.md.
-4. Claim an Addition — none of them are blocked by anything.
-5. **Don't** fake an API response to unblock yourself. File the backend issue and pick something above.
+**Frontend, waiting on the backend:**
+1. Draw the next page. Drawing never gets stuck.
+2. Write the content doc for a page that doesn't have one yet.
+3. Go back to a page that's already coded and finish it properly — what it shows while it's loading, what it shows when there's nothing there yet, what it shows when something breaks, whether it works without a mouse, whether animations switch off for people who've asked for that in their system settings, and the speed target in DESIGN.md.
+4. Claim an Addition — nothing blocks those.
+5. **Don't fake the data to get moving.** File the backend issue, then pick something above.
 
-**Backend, waiting on a decision or a review:**
-1. Move down the backend order — the models after auth are independent of each other apart from the dependencies in the map.
-2. Test coverage on what's already merged (see backend#11 for the shape).
-3. Open the issue for the next model so the frontend can see what's coming.
+**Backend, waiting:**
+1. Move to the next thing on the backend list. Apart from the arrows in the picture above, those pieces don't depend on each other.
+2. Write tests for what's already merged — backend#11 shows the shape.
+3. Open the issue for the next piece, so the frontend can see what's coming.
 
-**Either team, blocked on a person:** say so in the group chat *and* in the issue. A blocker nobody can see isn't a blocker anyone can clear.
+**Either team, stuck waiting on a person:** say so in the group chat *and* in the issue. If nobody can see you're stuck, nobody can unstick you.
 
 ## Step 1 — Foundation
 **Status: done.**
