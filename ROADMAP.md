@@ -45,6 +45,70 @@ The remaining Additions (member spotlight, company-visit info page, cybersecurit
 
 The frontend's first two pages need no backend, so backend#10 is not holding anyone up right now — build it properly rather than fast.
 
+## How the two teams move
+
+The point of this section: **nobody should ever be sitting blocked.** If you are, something below tells you what to pick up instead.
+
+### The dependency map
+
+```mermaid
+graph LR
+  subgraph FE["frontend — design lane (never blocked)"]
+    D["design any page<br/>FE 1 … FE 8"]
+  end
+  subgraph BE["backend"]
+    A["BE 2 auth<br/>backend#10"] --> P["BE 3 profiles"]
+    A --> F["BE 4 feed"]
+    A --> E["BE 5 events"]
+    P --> AT["BE 6 attendance"]
+    E --> AT
+    A --> FM["BE 7 forms"]
+  end
+  D --> B1["FE 1 landing (build)"]
+  D --> B2["FE 2 team (build)"]
+  A --> B3["FE 3 sign-in (build)"]
+  P --> B4["FE 4 profile (build)"]
+  F --> B5["FE 5 feed (build)"]
+  E --> B6["FE 6 calendar (build)"]
+  AT --> B7["FE 7 attendance (build)"]
+  FM --> B8["FE 8 forms (build)"]
+```
+
+### The one choke point
+
+**backend#10 (auth) gates six of the eight frontend pages.** Everything except landing and team sits behind it, directly or through a model that needs a logged-in user. It is the critical path — nothing else on the backend matters until it's real.
+
+That does *not* mean rush it. See the two lanes below for why there's slack right now.
+
+### Two lanes, and only one of them can block
+
+The frontend runs a **design lane** and a **build lane**, and they don't move together:
+
+- **Design never blocks.** Any page can be designed today — landing, profile, forms, all of it. A mockup doesn't need an API. If the build lane is stuck, the design lane keeps moving ahead of it.
+- **Build blocks.** A page can only be built once its design is finished *and* its backend endpoint exists.
+
+So the healthy state is: designs run several pages ahead of builds, and the backend lands endpoints in the same order the builds are queued. That's the whole scheduling trick.
+
+### Backend order mirrors frontend page order — keep it that way
+
+BE 3 → BE 4 → BE 5 unblocks FE 4 → FE 5 → FE 6, in that order. They currently line up. If the frontend reorders its pages, the backend reorders to match, and vice versa — otherwise one team ships work the other can't use yet while sitting blocked on work that wasn't prioritized.
+
+### If you're blocked
+
+**Frontend, waiting on an endpoint:**
+1. Design the next page in the order — the design lane is never blocked.
+2. Write the page's content doc if it doesn't have one.
+3. Polish a page already built: loading / empty / error states, keyboard nav, `prefers-reduced-motion` fallbacks, the Lighthouse bar in DESIGN.md.
+4. Claim an Addition — none of them are blocked by anything.
+5. **Don't** fake an API response to unblock yourself. File the backend issue and pick something above.
+
+**Backend, waiting on a decision or a review:**
+1. Move down the backend order — the models after auth are independent of each other apart from the dependencies in the map.
+2. Test coverage on what's already merged (see backend#11 for the shape).
+3. Open the issue for the next model so the frontend can see what's coming.
+
+**Either team, blocked on a person:** say so in the group chat *and* in the issue. A blocker nobody can see isn't a blocker anyone can clear.
+
 ## Step 1 — Foundation
 **Status: done.**
 GitHub org, `frontend` + `backend` repos, branch protection, CI (lint + typecheck + build on every PR), issue/PR templates, roles (Member/Reviewer/Maintainer/Owner).
