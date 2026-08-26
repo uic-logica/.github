@@ -10,9 +10,9 @@ GitHub org, `frontend` + `backend` repos, branch protection, CI (lint + typechec
 
 ## Step 2 — Auth + roles
 **Status: in progress — backend#1.**
-Members sign in with their UIC Google account. The backend stores three membership roles: `MEMBER`, `BOARD`, `EXEC_BOARD`. Role decides what a member can see and do everywhere else in the app.
+Members sign in with their UIC (`.edu`) email — no third-party OAuth (no "Sign in with Google"), and no passwords. Passwordless instead: a one-time code emailed to them, and/or a passkey saved to their device once they've set one up. The backend stores three membership roles: `MEMBER`, `BOARD`, `EXEC_BOARD`. Role decides what a member can see and do everywhere else in the app.
 
-- **Backend:** Auth.js wired to Google OAuth, sign-in restricted to the UIC email domain, roles stored on the `User` model, database-backed sessions. Code is written but not running yet — needs a real Postgres database and real Google OAuth credentials.
+- **Backend:** sign-in restricted to the UIC email domain, passwordless (one-time emailed code and/or WebAuthn passkey — no Google OAuth, no passwords), roles stored on the `User` model, database-backed sessions. The exact mechanism (code, passkey, or both) is the backend owner's call to make while building — see backend#1. The existing `auth.ts` was built on Google OAuth and needs reworking to match this.
 - **Frontend:** nothing yet. Waits on a working session from the backend before any page can check "who's logged in, what's their role."
 
 Depends on: Step 1.
@@ -58,7 +58,7 @@ A general-purpose form builder, used first for two concrete forms: startup-partn
 Depends on: Step 2 (submissions tie to a logged-in member where relevant).
 
 ## Additions
-No dependency order — start any of these whenever, they don't block the numbered steps and aren't blocked by them.
+These are suggestions, not a required list — a starting menu, not a mandate. No dependency order — start any of these whenever, they don't block the numbered steps and aren't blocked by them.
 
 - Landing page (public homepage content and design)
 - Team / roles page (who's on Exec Board / Board, photos + bios)
@@ -66,3 +66,7 @@ No dependency order — start any of these whenever, they don't block the number
 - Company-visit info page (public info page; the signup form itself is Step 7)
 - Cybersecurity showcase page (space for security-focused work/writeups)
 - Sponsor / partner wall (logos + links for supporting companies)
+
+### Got an idea that's not on this list?
+
+That's genuinely welcome. LOGICA isn't meant to enforce one person's roadmap on everyone — it's a shared structure and vision to build under, and there's room for your own idea inside that. You don't need permission to start something different, just visibility: write a short `.md` file in [`additions/`](additions) explaining what you want to build and why, PR it in, and let the team know. That's it — see [`additions/README.md`](additions/README.md) for the exact steps.

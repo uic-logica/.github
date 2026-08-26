@@ -10,6 +10,10 @@
 
 Nobody pushes directly to `main` — even leads go through a PR. This isn't bureaucracy for its own sake, it's so a second person always looks at what's shipping to a site members and partners see.
 
+## Proposing your own idea
+
+The [ROADMAP.md](ROADMAP.md) Additions list is a suggestion, not a required list. Got something else you want to build that fits LOGICA's structure and vision? You don't need permission — just tell us. See [`additions/README.md`](additions/README.md) for the two-step process (a short `.md` explaining it, then a PR).
+
 ## Claude Code skills
 
 If you're using Claude Code, install the [`skills`](https://github.com/uic-logica/skills) plugin — it packages this workflow as `/` commands (`/logica-pr`, `/logica-review`, `/logica-test`, `/logica-issue`, `/logica-lean`) so you don't have to remember the steps above by hand. See that repo's README for install instructions.
