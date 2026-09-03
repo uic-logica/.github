@@ -8,14 +8,15 @@ Each step's tracking issues live in the repo that does the work — check `front
 
 ## Frontend page order
 
-The frontend does not follow the step numbers below. It works **one page at a time, and the design is finished before any code is written**:
+The frontend does not follow the step numbers below. It works **one page at a time**, in this order — **flipped 2026-09-01** (see `frontend`#26): backend is shipping faster than frontend right now, so locking a mockup before any page hits the real API means designing against guesses about response shape.
 
-1. **Design** the page in Figma, [Pencil](https://pen.dev), or equivalent — a real, complete mockup grounded in the art/interaction reference doc and that page's content doc. Not a rough draft to polish in code.
-2. **Share it** — a short `.md` in `frontend` with the link and a preview screenshot, PR'd, so it's reviewable without opening the design tool.
-3. **Build it** — implement the page directly from that finished design.
-4. **Then** start the next page.
+1. **Skeleton** — a functional page wired to the real backend (`NEXT_PUBLIC_API_URL`): real data, real loading/empty/error states, unstyled or minimally styled. Proves the data shape before any visual decision gets locked in.
+2. **Design** — once the skeleton's data shape is proven live, turn the research (art/interaction reference doc + that page's content doc) into an actual mockup in Figma, [Pencil](https://pen.dev), or equivalent.
+3. **Share it** — a short `.md` in `frontend` with the link and a preview screenshot, PR'd, so it's reviewable without opening the design tool.
+4. **Polish** — tune the skeleton in place to match that mockup.
+5. **Then** start the next page.
 
-See [`frontend`'s DESIGN.md](https://github.com/uic-logica/frontend/blob/main/DESIGN.md) for the visual direction and the motion/performance bar.
+See [`frontend`'s DESIGN.md](https://github.com/uic-logica/frontend/blob/main/DESIGN.md) for the full sequence, the visual direction, and the motion/performance bar.
 
 | # | Page | Issue | Roadmap step | Blocked by backend? |
 |---|------|-------|--------------|---------------------|
@@ -29,14 +30,16 @@ See [`frontend`'s DESIGN.md](https://github.com/uic-logica/frontend/blob/main/DE
 | 7 | Attendance check-in + history | frontend#5 | Step 6 | yes — backend#5 |
 | 8 | Form renderer + the two forms | frontend#6 | Step 7 | yes — backend#6 |
 
-The remaining Additions (member spotlight, company-visit info page, cybersecurity showcase, sponsor wall) slot into this order whenever someone claims one — same design-then-build sequence.
+The remaining Additions (member spotlight, company-visit info page, cybersecurity showcase, sponsor wall) slot into this order whenever someone claims one — same skeleton-then-design-then-polish sequence.
+
+**Rows 3-8 already have a bare-minimum skeleton** (throwaway, unstyled — not a substitute for step 1 above) covering sign-in through forms, wired to matching bare-bones backend endpoints for rows 3-8's backend issues too: `frontend`#27 and `backend`#15. Treat both as a rough starting reference for the real skeleton/backend work on each row, not finished work to build on top of — see each PR's description for specifics on what's missing.
 
 ## Backend order
 
 | # | Work | Issue | Roadmap step | Status |
 |---|------|-------|--------------|--------|
 | 1 | Foundation: scaffold, CI, branch protection | backend#7 | Step 1 | done |
-| 2 | Passwordless auth + roles | backend#10, #11 | Step 2 | in progress |
+| 2 | Passwordless auth + roles | backend#10, #11 | Step 2 | PR open — backend#13, ready to merge |
 | 3 | Profiles: read/update + involvement summary | backend#2 | Step 3 | |
 | 4 | Feed: `Post` model + CRUD API | backend#3 | Step 4 | |
 | 5 | Events: `Event` model, RSVP, shareable-link data | backend#4 | Step 5 | |
@@ -114,7 +117,7 @@ If the frontend changes which page it's doing next, the backend changes to match
 GitHub org, `frontend` + `backend` repos, branch protection, CI (lint + typecheck + build on every PR), issue/PR templates, roles (Member/Reviewer/Maintainer/Owner).
 
 ## Step 2 — Auth + roles
-**Status: in progress — backend#10.**
+**Status: PR open — backend#13, ready to merge (closes backend#10).**
 Members sign in with their UIC (`.edu`) email — no third-party OAuth (no "Sign in with Google"), and no passwords. Passwordless instead: a one-time code emailed to them, and/or a passkey saved to their device once they've set one up. The backend stores three membership roles: `MEMBER`, `BOARD`, `EXEC_BOARD`. Role decides what a member can see and do everywhere else in the app.
 
 - **Backend:** sign-in restricted to the UIC email domain, passwordless (one-time emailed code and/or WebAuthn passkey — no Google OAuth, no passwords), roles stored on the `User` model, database-backed sessions. The exact mechanism (code, passkey, or both) is the backend owner's call to make while building — see backend#10. The existing `auth.ts` was built on Google OAuth and needs reworking to match this.
