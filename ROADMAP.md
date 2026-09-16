@@ -8,29 +8,29 @@ Each step's tracking issues live in the repo that does the work — check `front
 
 ## Frontend page order
 
-The frontend does not follow the step numbers below. It works **one page at a time**, in this order — **flipped 2026-09-01** (see `frontend`#26): backend is shipping faster than frontend right now, so locking a mockup before any page hits the real API means designing against guesses about response shape.
+The frontend does not follow the step numbers below. It works **one page at a time**, in this order.
 
-1. **Skeleton** — a functional page wired to the real backend (`NEXT_PUBLIC_API_URL`): real data, real loading/empty/error states, unstyled or minimally styled. Proves the data shape before any visual decision gets locked in.
-2. **Design** — once the skeleton's data shape is proven live, turn the research (art/interaction reference doc + that page's content doc) into an actual mockup in Figma, [Pencil](https://pen.dev), or equivalent.
-3. **Share it** — a short `.md` in `frontend` with the link and a preview screenshot, PR'd, so it's reviewable without opening the design tool.
-4. **Polish** — tune the skeleton in place to match that mockup.
-5. **Then** start the next page.
+**Simplified 2026-09-16:** the separate design-mockup-first workflow (step 2-3 below) was making frontend move too slowly — pages sat waiting on a Figma/Pencil mockup and a review round before any code landed. Default now: build directly against [`frontend`'s DESIGN.md](https://github.com/uic-logica/frontend/blob/main/DESIGN.md), which is itself the active spec (colors, type scale, components, spacing) — skip the separate mockup unless a page is genuinely novel enough to need one designed first. The deeper Villela/Bulcão/Cruz-Diez "culture-rich" direction referenced in `frontend`'s `Eddie_DESIGN.md` is a later phase, not near-term scope. There's no longer a single design lead drawing every page ahead of the code — whoever builds a page owns making it match DESIGN.md.
+
+1. **Skeleton** — a functional page wired to the real backend (`NEXT_PUBLIC_API_URL`): real data, real loading/empty/error states. Proves the data shape before any visual decision gets locked in.
+2. **Build it styled** — implement directly against DESIGN.md's established system (colors, `type-h1`–`h4`/`type-label`/`text-body*` scale, components). Open a design mockup first only if the page doesn't fit anything DESIGN.md already covers.
+3. **Then** start the next page.
 
 See [`frontend`'s DESIGN.md](https://github.com/uic-logica/frontend/blob/main/DESIGN.md) for the full sequence, the visual direction, and the motion/performance bar.
 
-| # | Page | Issue | Roadmap step | Blocked by backend? |
-|---|------|-------|--------------|---------------------|
-| 0 | Art/interaction reference doc + a content doc per page | frontend#18, #19 | — | no |
-| 1 | Landing page | frontend#7 | Additions | no |
-| 2 | Team / roles page | frontend#8 | Additions | no |
-| 3 | Sign-in screen + session/role check | frontend#1 | Step 2 | yes — backend#10 |
-| 4 | Profile page | frontend#2 | Step 3 | yes — backend#2 |
-| 5 | Feed page + composer | frontend#3 | Step 4 | yes — backend#3 |
-| 6 | Calendar + event pages | frontend#4 | Step 5 | yes — backend#4 |
-| 7 | Attendance check-in + history | frontend#5 | Step 6 | yes — backend#5 |
-| 8 | Form renderer + the two forms | frontend#6 | Step 7 | yes — backend#6 |
+| # | Page | Issue | Roadmap step | Status |
+|---|------|-------|--------------|--------|
+| 0 | Art/interaction reference doc + a content doc per page | frontend#18, #19 | — | done |
+| 1 | Landing page | frontend#7 | Additions | done |
+| 2 | Team / roles page | frontend#8 | Additions | in progress — full roster + LinkedIn, heading sizes |
+| 3 | Sign-in screen + session/role check | frontend#1 | Step 2 | done |
+| 4 | Profile page | frontend#2 | Step 3 | in progress |
+| 5 | Feed page + composer | frontend#3 | Step 4 | |
+| 6 | Calendar + event pages | frontend#4 | Step 5 | |
+| 7 | Attendance check-in + history | frontend#5 | Step 6 | |
+| 8 | Form renderer + the two forms | frontend#6 | Step 7 | |
 
-The remaining Additions (member spotlight, company-visit info page, cybersecurity showcase, sponsor wall) slot into this order whenever someone claims one — same skeleton-then-design-then-polish sequence.
+The remaining Additions (member spotlight, company-visit info page, cybersecurity showcase, sponsor wall) slot into this order whenever someone claims one — same skeleton-then-build-styled sequence.
 
 **Rows 3-8 already have a bare-minimum skeleton** (throwaway, unstyled — not a substitute for step 1 above) covering sign-in through forms, wired to matching bare-bones backend endpoints for rows 3-8's backend issues too: `frontend`#27 and `backend`#15. Treat both as a rough starting reference for the real skeleton/backend work on each row, not finished work to build on top of — see each PR's description for specifics on what's missing.
 
@@ -39,7 +39,7 @@ The remaining Additions (member spotlight, company-visit info page, cybersecurit
 | # | Work | Issue | Roadmap step | Status |
 |---|------|-------|--------------|--------|
 | 1 | Foundation: scaffold, CI, branch protection | backend#7 | Step 1 | done |
-| 2 | Passwordless auth + roles | backend#10, #11 | Step 2 | backend done (backend#13, merged) — frontend#1 (sign-in screen) still open |
+| 2 | Passwordless auth + roles | backend#10, #11 | Step 2 | done — backend#13 and frontend#1 both merged |
 | 3 | Profiles: read/update + involvement summary | backend#2 | Step 3 | |
 | 4 | Feed: `Post` model + CRUD API | backend#3 | Step 4 | |
 | 5 | Events: `Event` model, RSVP, shareable-link data | backend#4 | Step 5 | |
@@ -88,7 +88,7 @@ That doesn't mean rush the login system. The next bit is why there's time.
 - **Drawing never gets stuck.** Any page can be drawn today. A mockup of the profile page doesn't need a working database behind it.
 - **Coding gets stuck.** A page can only be coded once its drawing is finished *and* the backend piece it needs exists.
 
-So day to day this should look like: the drawings stay a few pages ahead of the code. Eduardo and LizBCa keep drawing the next page; the backend builds pieces in the same order the pages are going to be coded. Nobody sits waiting.
+So day to day this should look like: whoever's picking up the next page builds it directly against DESIGN.md (see the Simplified note above) instead of waiting on a separate mockup; the backend builds pieces in the same order the pages are going to be coded. Nobody sits waiting.
 
 ### The backend should build things in the same order the pages get coded
 
@@ -117,11 +117,11 @@ If the frontend changes which page it's doing next, the backend changes to match
 GitHub org, `frontend` + `backend` repos, branch protection, CI (lint + typecheck + build on every PR), issue/PR templates, roles (Member/Reviewer/Maintainer/Owner).
 
 ## Step 2 — Auth + roles
-**Status: backend done (backend#13, merged, closed backend#10) — frontend#1 (sign-in screen) still open.**
+**Status: done.** Backend (backend#13, merged, closed backend#10) and frontend (frontend#1, merged) are both shipped.
 Members sign in with their UIC (`.edu`) email — no third-party OAuth (no "Sign in with Google"), and no passwords. Passwordless instead: a one-time code emailed to them, and/or a passkey saved to their device once they've set one up. The backend stores three membership roles: `MEMBER`, `BOARD`, `EXEC_BOARD`. Role decides what a member can see and do everywhere else in the app.
 
 - **Backend:** sign-in restricted to the UIC email domain, passwordless (one-time emailed code and/or WebAuthn passkey — no Google OAuth, no passwords), roles stored on the `User` model, database-backed sessions. The exact mechanism (code, passkey, or both) is the backend owner's call to make while building — see backend#10. The existing `auth.ts` was built on Google OAuth and needs reworking to match this.
-- **Frontend:** the sign-in screen and the session/role check — `[FE 3]`, frontend#1. The screen gets designed whenever; the build waits on a working session from the backend before any page can check "who's logged in, what's their role." The frontend's first two pages (landing, team) don't need this, so it isn't blocking frontend work today.
+- **Frontend:** the sign-in screen and the session/role check — `[FE 3]`, frontend#1. Built directly against DESIGN.md's system.
 
 Depends on: Step 1.
 
