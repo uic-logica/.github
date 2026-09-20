@@ -18,6 +18,8 @@ The frontend does not follow the step numbers below. It works **one page at a ti
 
 See [`frontend`'s DESIGN.md](https://github.com/uic-logica/frontend/blob/main/DESIGN.md) for the full sequence, the visual direction, and the motion/performance bar.
 
+**Landing page and Team/roles page are an exception to steps 2-3, as of 2026-09-19.** The Figma/Pencil mockup + share-it doc took too long to turn around, so the team is designing those two pages directly in code/PRs instead of mockup-first — iterate on the live page, land it, no separate mockup approval gate. Steps 1 and 4 (skeleton, polish) still apply. The other pages keep the mockup-first process for now.
+
 | # | Page | Issue | Roadmap step | Blocked by backend? |
 |---|------|-------|--------------|---------------------|
 | 0 | Art/interaction reference doc + a content doc per page | frontend#18, #19 | — | no |
