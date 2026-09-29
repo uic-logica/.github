@@ -24,6 +24,7 @@ flowchart LR
 | Every change starts as an issue with a `team: …` label | Anyone can see who's building what |
 | Branch `yourname/short-description`, never commit to `main` | Branch protection blocks it anyway |
 | One PR per change, linked with `Closes #N` | Small reviews ship faster |
+| Every PR gets a [change note](docs/changes/): why and what it changes | Anyone can see why the code looks the way it does |
 | Run `npm run lint` and `npx tsc --noEmit` before pushing | CI runs the same checks and blocks the merge |
 | Decisions go in the repo (issue, PR or doc), not only Discord | The public record is the point |
 
