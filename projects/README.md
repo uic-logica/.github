@@ -1,5 +1,7 @@
 # Projects
 
+> **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) · **Last reviewed:** Sep 29, 2026 · **Audience:** Members and recruiters · **Type:** Landing page
+
 One team per product. Each folder has the goal, a diagram, the dated timeline, OKRs, design doc, weekly status, demo day and retro.
 
 | Team | Priority | Label |

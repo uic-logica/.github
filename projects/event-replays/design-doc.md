@@ -1,4 +1,6 @@
-# 🟢 Event replays in 3D — design doc
+# Event replays in 3D — design doc
+
+> **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) · **Last reviewed:** Sep 29, 2026 · **Audience:** Event replays team · **Type:** Design doc
 
 **Status:** not started · due and review date in the [timeline](README.md#timeline--fall-2026) · authors: the team · reviewers: the lead + one person from another team.
 

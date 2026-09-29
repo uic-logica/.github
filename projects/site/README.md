@@ -1,6 +1,8 @@
-# 🟡 The site
+# The site
 
-**Label:** `team: site` · **Lead:** Nicolas Rufino
+> **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) · **Last reviewed:** Sep 29, 2026 · **Audience:** Members and recruiters · **Type:** Project page
+
+**Label:** `team: site`
 
 The live LOGICA site: public pages, accounts, member dashboard, exec workspace, speaker intake. Code: [frontend](https://github.com/uic-logica/frontend) · [backend](https://github.com/uic-logica/backend). Design: the night pen in [`frontend/design`](https://github.com/uic-logica/frontend/tree/main/design).
 

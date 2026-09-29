@@ -1,4 +1,6 @@
-# ⚪ Mock interviewer — launch checklist
+# Mock interviewer — launch checklist
+
+> **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) · **Last reviewed:** Sep 29, 2026 · **Audience:** Mock interviewer team · **Type:** Checklist
 
 Every box is checked before the public release. Owner: the team; sign-off: the lead.
 

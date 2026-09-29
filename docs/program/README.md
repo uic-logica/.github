@@ -1,6 +1,6 @@
 # How we run projects
 
-**Owner:** Nicolas Rufino, software lead. A lightweight version of how Google plans, ships and learns — sized for students giving 4–8 hours a week.
+> **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) · **Last reviewed:** Sep 29, 2026 · **Audience:** Members and recruiters · **Type:** Conceptual
 
 ## Fall 2026 at a glance
 

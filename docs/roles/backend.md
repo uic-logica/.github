@@ -1,5 +1,7 @@
 # Role: Backend
 
+> **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) · **Last reviewed:** Sep 29, 2026 · **Audience:** Backend members · **Type:** Reference
+
 You own auth, data and every API the frontend calls, in [`backend`](https://github.com/uic-logica/backend) (Next.js route handlers, Prisma, Postgres).
 
 | Do | Don't |

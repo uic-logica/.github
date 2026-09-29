@@ -1,4 +1,6 @@
-# 🟠 Resume builder — launch checklist
+# Resume builder — launch checklist
+
+> **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) · **Last reviewed:** Sep 29, 2026 · **Audience:** Resume builder team · **Type:** Checklist
 
 Every box is checked before the public release. Owner: the team; sign-off: the lead.
 

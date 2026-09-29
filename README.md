@@ -1,5 +1,7 @@
 # LOGICA @ UIC — how we work
 
+> **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) · **Last reviewed:** Sep 29, 2026 · **Audience:** LOGICA members · **Type:** Landing page
+
 Org-wide docs for members. The public overview is on the [org page](https://github.com/uic-logica).
 
 | Start here | For |

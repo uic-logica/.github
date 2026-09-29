@@ -1,7 +1,8 @@
-# 🟢 Event replays in 3D
+# Event replays in 3D
 
-**Label:** `team: event-replays` · **Priority:** next · **Lead:** Nicolas Rufino
+> **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) · **Last reviewed:** Sep 29, 2026 · **Audience:** Members and recruiters · **Type:** Project page
 
+**Label:** `team: event-replays` · **Priority:** next
 
 Film an event on a phone; anyone can walk through it later on the event page. **Every face is blurred before anything is published.**
 
@@ -25,6 +26,23 @@ flowchart LR
 **You learn:** computer vision, GPU jobs, 3D on the web.
 
 ## Timeline — Fall 2026
+
+```mermaid
+gantt
+  title Event replays in 3D — Fall 2026
+  dateFormat YYYY-MM-DD
+  axisFormat %b %d
+  Kickoff                 :milestone, 2026-10-01, 0d
+  Design sprint (2 sessions) :2026-10-08, 8d
+  Design doc              :2026-10-16, 10d
+  Design review           :milestone, 2026-10-27, 0d
+  Spike (3D stack)        :2026-10-26, 7d
+  Build                   :2026-11-02, 28d
+  Feature complete        :milestone, 2026-11-29, 0d
+  Code freeze             :milestone, 2026-12-01, 0d
+  Demo day (showcase)     :crit, milestone, 2026-12-03, 0d
+  Retro                   :milestone, 2026-12-05, 0d
+```
 
 | Milestone | Date |
 |---|---|

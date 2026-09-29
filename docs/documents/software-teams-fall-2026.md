@@ -1,5 +1,7 @@
 # LOGICA Software Teams — Fall 2026
 
+> **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) · **Last reviewed:** Sep 29, 2026 · **Audience:** LOGICA members · **Type:** Conceptual
+
 > Starting October 2026, LOGICA @ UIC builds software as **product teams**. Each team owns one product that helps students get hired. Everything is open source.
 > Software lead: **Nicolas Rufino** ([@nicolasrufino](https://github.com/nicolasrufino)). Live version of this doc: [Claude Docs](https://claude.ai/code/artifact/e34dd50c-29af-4f88-97b2-bd90e0c6f4fd).
 

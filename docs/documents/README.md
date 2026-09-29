@@ -1,5 +1,7 @@
 # Documents
 
+> **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) · **Last reviewed:** Sep 29, 2026 · **Audience:** Members and recruiters · **Type:** Landing page
+
 Documents the team works from. Each one has a live version in Claude Docs; the copy here is the public record.
 
 | Document | What it covers |

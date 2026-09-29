@@ -1,4 +1,6 @@
-# ⚪ Mock interviewer — retro
+# Mock interviewer — retro
+
+> **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) · **Last reviewed:** Sep 29, 2026 · **Audience:** Mock interviewer team · **Type:** Retro
 
 **Scheduled:** see the [timeline](README.md#timeline--fall-2026). Written within 5 days of the demo.
 

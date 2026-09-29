@@ -1,7 +1,8 @@
-# ⚪ Mock interviewer
+# Mock interviewer
 
-**Label:** `team: mock-interviewer` · **Priority:** later · **Lead:** Nicolas Rufino
+> **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) · **Last reviewed:** Sep 29, 2026 · **Audience:** Members and recruiters · **Type:** Project page
 
+**Label:** `team: mock-interviewer` · **Priority:** later
 
 Practice interviews by voice for roles in your tracker, then get a transcript with feedback. Runs through MCP on the member's own AI account.
 
@@ -14,6 +15,20 @@ Practice interviews by voice for roles in your tracker, then get a transcript wi
 Starts after the opportunity board tracker exists. **You learn:** voice interfaces, prompt design, evaluation.
 
 ## Timeline — Fall 2026
+
+```mermaid
+gantt
+  title Mock interviewer — Fall 2026
+  dateFormat YYYY-MM-DD
+  axisFormat %b %d
+  One-pager               :2026-11-02, 7d
+  Design doc              :2026-11-09, 7d
+  Design review           :milestone, 2026-11-17, 0d
+  Spike                   :2026-11-16, 7d
+  Prototype               :2026-11-23, 10d
+  Preview demo (showcase) :crit, milestone, 2026-12-03, 0d
+  Retro                   :milestone, 2026-12-05, 0d
+```
 
 | Milestone | Date |
 |---|---|

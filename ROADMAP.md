@@ -1,6 +1,6 @@
 # Roadmap
 
-**Owner:** Nicolas Rufino, software lead ([@nicolasrufino](https://github.com/nicolasrufino)) · **Updated:** 2026-09-29
+> **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) · **Last reviewed:** Sep 29, 2026 · **Audience:** Members and recruiters · **Type:** Plan
 
 LOGICA @ UIC is building two things: **the club site** (live) and **four products that help students get hired** (starting October 2026, one team each).
 
