@@ -21,7 +21,7 @@ flowchart LR
 |---|---|---|
 | Members apply to Software Teams from the dashboard | [site](https://logicauic-logica5.vercel.app/dashboard/teams) · frontend#91 · backend#64 | 🟢 Open |
 | Review applications, interviews, team placement | exec dashboard → Applications | 🟡 In progress |
-| Team kickoffs: one issue board per team | issues labeled `team: …` | ⚪ After placement |
+| Team kickoffs | Thu Oct 1 · issues labeled `team: …` | ⚪ After placement |
 
 Placement rule: **people who have contributed the most get priority**, then the application and a short interview. Details: [Software Teams — Fall 2026](docs/documents/software-teams-fall-2026.md).
 
@@ -31,13 +31,24 @@ Each product has a team page with scope, first milestone and roles.
 
 | Product | Team page | Label | Priority |
 |---|---|---|---|
-| Opportunity board — scrapers, feed by class year, tracker | [docs/teams/opportunity-board.md](docs/teams/opportunity-board.md) | `team: opportunity-board` | 🔵 Main focus |
-| Resume builder — your own AI over MCP, one proven template | [docs/teams/resume-builder.md](docs/teams/resume-builder.md) | `team: resume-builder` | 🔵 Main focus |
-| Event replays in 3D — computer vision, faces blurred | [docs/teams/event-replays.md](docs/teams/event-replays.md) | `team: event-replays` | ⚪ Next |
-| Mock interviewer — voice practice via MCP | [docs/teams/mock-interviewer.md](docs/teams/mock-interviewer.md) | `team: mock-interviewer` | ⚪ Later |
-| The site itself — upkeep | [docs/teams/site.md](docs/teams/site.md) | `team: site` | Ongoing |
+| Opportunity board — scrapers, feed by class year, tracker | [projects/opportunity-board/](projects/opportunity-board/) | `team: opportunity-board` | 🔵 Main focus |
+| Resume builder — your own AI over MCP, one proven template | [projects/resume-builder/](projects/resume-builder/) | `team: resume-builder` | 🔵 Main focus |
+| Event replays in 3D — computer vision, faces blurred | [projects/event-replays/](projects/event-replays/) | `team: event-replays` | ⚪ Next |
+| Mock interviewer — voice practice via MCP | [projects/mock-interviewer/](projects/mock-interviewer/) | `team: mock-interviewer` | ⚪ Later |
+| The site itself — upkeep | [projects/site/](projects/site/) | `team: site` | Ongoing |
 
 Every product starts with a **two-week spike**: prove the hard part works on one laptop before it touches the site.
+
+### Demo days
+
+| Team | MVP (internal preview) | Code freeze | **Demo day** | Public release | Retro |
+|---|---|---|---|---|---|
+| 🔵 Opportunity board | Fri Oct 30 | Sun Nov 8 | **Thu Nov 12** | Fri Nov 13 | Tue Nov 17 |
+| 🟠 Resume builder | Fri Oct 30 | Sun Nov 15 | **Thu Nov 19** | Fri Nov 20 | Mon Nov 23 |
+| 🟢 Event replays | — | Tue Dec 1 | **Thu Dec 3** (showcase) | — | Sat Dec 5 |
+| ⚪ Mock interviewer | — | — | **Thu Dec 3** (preview) | — | Sat Dec 5 |
+
+Code ships every Friday from **Oct 23** (release train). Demo writeups, slides and retros land in each `projects/<team>/` folder. Full calendar and the practices behind it: [How we run projects](docs/program/README.md).
 
 ## Before — how we got here (Aug–Sep 2026)
 
