@@ -2,7 +2,7 @@
 
 > **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) · **Last reviewed:** Sep 29, 2026 · **Audience:** LOGICA members · **Type:** Change note
 >
-> **PR:** frontend#TBD
+> **PR:** frontend#98
 
 ## Why
 

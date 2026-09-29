@@ -2,7 +2,7 @@
 
 > **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) · **Last reviewed:** Sep 29, 2026 · **Audience:** LOGICA members · **Type:** Change note
 >
-> **PR:** backend#TBD
+> **PR:** backend#71
 
 ## Why
 
@@ -23,6 +23,7 @@ flowchart LR
 |---|---|
 | LinkedIn OpenID Connect | A signed-in member can grant only `openid profile email` access |
 | Local photo copy | The image remains available after LinkedIn's temporary URL expires |
+| Raster photos only | JPEG, PNG or WebP; SVG is refused because it could run script from our site |
 | No stored access token | LOGICA discards the token after reading the user info and photo |
 | Remove-photo endpoint | Members can disconnect the copied identity and image |
 
