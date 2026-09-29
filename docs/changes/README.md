@@ -6,6 +6,7 @@ One note per PR: why it was made and what it changes. Newest first.
 
 | Date | PR | Note |
 |---|---|---|
+| Sep 29, 2026 | frontend#101 | [Frontend: make sign-up easy to find](2026-09-29-frontend-signup-links.md) |
 | Sep 29, 2026 | backend#71 | [Backend: LinkedIn profile photo connection](2026-09-29-backend-linkedin-connect.md) |
 | Sep 29, 2026 | frontend#98 | [Frontend: Connect LinkedIn profile photo](2026-09-29-frontend-linkedin-connect.md) |
 | Sep 29, 2026 | backend#67 | [Backend CI: hardening and a migration check](2026-09-29-backend-ci.md) |
