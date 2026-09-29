@@ -6,7 +6,7 @@ labels: ''
 
 **Description**
 
-**Area** (label one: `frontend` / `backend` / `security` / `design` / `docs`)
+**Team** (label one: `team: site` / `team: opportunity-board` / `team: resume-builder` / `team: event-replays` / `team: mock-interviewer`)
 
 **Acceptance criteria**
 - [ ]
