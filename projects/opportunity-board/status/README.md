@@ -1,4 +1,6 @@
-# 🔵 Opportunity board — weekly status
+# Opportunity board — weekly status
+
+> **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) · **Last reviewed:** Sep 29, 2026 · **Audience:** Opportunity board team · **Type:** Status log
 
 One file per week, posted Mondays from **Oct 12**: `2026-Wnn.md`. Discord check-ins every two days stay the day-to-day; this is the written record.
 

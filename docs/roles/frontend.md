@@ -1,5 +1,7 @@
 # Role: Frontend
 
+> **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) · **Last reviewed:** Sep 29, 2026 · **Audience:** Frontend members · **Type:** Reference
+
 You build what members and visitors see, in [`frontend`](https://github.com/uic-logica/frontend) (Next.js, Tailwind).
 
 | Do | Don't |

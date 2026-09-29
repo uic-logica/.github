@@ -1,4 +1,6 @@
-# 🟢 Event replays in 3D — OKRs, Fall 2026
+# Event replays in 3D — OKRs, Fall 2026
+
+> **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) · **Last reviewed:** Sep 29, 2026 · **Audience:** Event replays team · **Type:** OKRs
 
     **Status:** proposed by the lead · the team finalizes it at kickoff (Thu Oct 1) · published Tue Oct 6 · graded Tue Nov 3 (mid-term) and Fri Dec 11 (final).
 

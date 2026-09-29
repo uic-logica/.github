@@ -1,7 +1,8 @@
-# 🟠 Resume builder
+# Resume builder
 
-**Label:** `team: resume-builder` · **Priority:** main focus · **Lead:** Nicolas Rufino
+> **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) · **Last reviewed:** Sep 29, 2026 · **Audience:** Members and recruiters · **Type:** Project page
 
+**Label:** `team: resume-builder` · **Priority:** main focus
 
 A resume tailored to each posting, from one proven template. **Members' own AI does the writing through our MCP tools**, so the club pays for no tokens.
 
@@ -30,6 +31,27 @@ sequenceDiagram
 **You learn:** MCP servers, tool design for AI agents, PDF rendering.
 
 ## Timeline — Fall 2026
+
+New to these terms? See [words we use](../../docs/how-we-run-projects/README.md#words-we-use).
+
+```mermaid
+gantt
+  title Resume builder — Fall 2026
+  dateFormat YYYY-MM-DD
+  axisFormat %b %d
+  Kickoff                 :milestone, 2026-10-01, 0d
+  Spike (MCP + schema)    :2026-10-05, 5d
+  Design doc              :2026-10-05, 7d
+  Design review           :milestone, 2026-10-14, 0d
+  Build to MVP            :2026-10-14, 16d
+  MVP (internal preview)  :milestone, 2026-10-30, 0d
+  Privacy + security review :milestone, 2026-11-06, 0d
+  Harden                  :2026-10-31, 15d
+  Code freeze             :milestone, 2026-11-15, 0d
+  Demo day                :crit, milestone, 2026-11-19, 0d
+  Public v1.0             :milestone, 2026-11-20, 0d
+  Retro                   :milestone, 2026-11-23, 0d
+```
 
 | Milestone | Date |
 |---|---|

@@ -1,4 +1,8 @@
-# 🔵 Opportunity board — demo day
+# Opportunity board — demo day
+
+> **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) · **Last reviewed:** Sep 29, 2026 · **Audience:** Opportunity board team · **Type:** Demo record
+
+> This page is empty on purpose until demo day. The team fills it in; the outline below is what goes in it.
 
 **Scheduled:** 2026-11-12. The writeup lands in `demos/2026-11-12/README.md` the same day, with slides and a video link.
 

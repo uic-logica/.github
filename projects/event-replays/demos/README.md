@@ -1,4 +1,8 @@
-# 🟢 Event replays in 3D — demo day
+# Event replays in 3D — demo day
+
+> **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) · **Last reviewed:** Sep 29, 2026 · **Audience:** Event replays team · **Type:** Demo record
+
+> This page is empty on purpose until demo day. The team fills it in; the outline below is what goes in it.
 
 **Scheduled:** 2026-12-03. The writeup lands in `demos/2026-12-03/README.md` the same day, with slides and a video link.
 

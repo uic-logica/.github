@@ -1,4 +1,6 @@
-# 🟢 Event replays in 3D — launch checklist
+# Event replays in 3D — launch checklist
+
+> **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) · **Last reviewed:** Sep 29, 2026 · **Audience:** Event replays team · **Type:** Checklist
 
 Every box is checked before the public release. Owner: the team; sign-off: the lead.
 

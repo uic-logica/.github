@@ -1,7 +1,8 @@
-# 🔵 Opportunity board
+# Opportunity board
 
-**Label:** `team: opportunity-board` · **Priority:** main focus · **Lead:** Nicolas Rufino
+> **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) · **Last reviewed:** Sep 29, 2026 · **Audience:** Members and recruiters · **Type:** Project page
 
+**Label:** `team: opportunity-board` · **Priority:** main focus
 
 Every internship and new-grad role worth applying to, always current, filtered to what each member can actually get — plus a tracker for every application.
 
@@ -30,6 +31,27 @@ flowchart LR
 **You learn:** scraping, scheduled jobs, data pipelines, search.
 
 ## Timeline — Fall 2026
+
+New to these terms? See [words we use](../../docs/how-we-run-projects/README.md#words-we-use).
+
+```mermaid
+gantt
+  title Opportunity board — Fall 2026
+  dateFormat YYYY-MM-DD
+  axisFormat %b %d
+  Kickoff                 :milestone, 2026-10-01, 0d
+  Spike                   :2026-10-05, 5d
+  Design doc              :2026-10-05, 7d
+  Design review           :milestone, 2026-10-13, 0d
+  Build to MVP            :2026-10-13, 17d
+  MVP (internal preview)  :milestone, 2026-10-30, 0d
+  Harden                  :2026-10-31, 8d
+  Code freeze             :milestone, 2026-11-08, 0d
+  Demo day                :crit, milestone, 2026-11-12, 0d
+  Public v1.0             :milestone, 2026-11-13, 0d
+  Retro                   :milestone, 2026-11-17, 0d
+  v1.1 at showcase        :milestone, 2026-12-03, 0d
+```
 
 | Milestone | Date |
 |---|---|

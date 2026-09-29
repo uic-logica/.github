@@ -1,5 +1,7 @@
 # Role: QA
 
+> **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) · **Last reviewed:** Sep 29, 2026 · **Audience:** QA members · **Type:** Tutorial
+
 You make sure what ships works before members see it. No coding needed to start.
 
 | Step | What |
