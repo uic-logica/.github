@@ -16,6 +16,8 @@ Starts after the opportunity board tracker exists. **You learn:** voice interfac
 
 ## Timeline — Fall 2026
 
+New to these terms? See [words we use](../../docs/how-we-run-projects/README.md#words-we-use).
+
 ```mermaid
 gantt
   title Mock interviewer — Fall 2026

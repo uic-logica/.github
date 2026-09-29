@@ -63,6 +63,21 @@ flowchart LR
 
 **Skipped on purpose:** readability certification, OWNERS approvals, launch coordination engineers, capacity planning, 20% time — too heavy for 13 volunteers.
 
+## Words we use
+
+| Word | Plain meaning |
+|---|---|
+| **OKR** | Objectives and key results: what the team wants to achieve and 2–3 numbers that prove it. Graded 0.0–1.0 at the end |
+| **Committed / aspirational** | Committed means we must hit it (1.0). Aspirational means a stretch goal; about 0.7 is a good result |
+| **Design doc** | A 1–3 page plan written before building: the problem, the approach, and what else we considered |
+| **Spike** | A short experiment (about a week) to prove the hardest part works before building the rest |
+| **MVP** | Minimum viable product: the smallest version members can try |
+| **Release train** | Whatever is merged by Friday ships that Friday, every week |
+| **Code freeze** | A few days before a demo, only bug fixes get merged |
+| **Launch checklist** | The boxes a project checks before going public, including privacy and security |
+| **Demo day** | The team presents what it built; the writeup, slides and video go in the repo |
+| **Blameless retro** | A look back after the demo: what worked, what didn't, what we learned. It fixes processes, not people |
+
 ## Where things live
 
 | Thing | Where |

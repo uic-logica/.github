@@ -2,6 +2,8 @@
 
 > **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) · **Last reviewed:** Sep 29, 2026 · **Audience:** Mock interviewer team · **Type:** Retro
 
+> This page is empty on purpose until the retro, within 5 days of the demo. The team fills it in; the outline below is what goes in it.
+
 **Scheduled:** see the [timeline](README.md#timeline--fall-2026). Written within 5 days of the demo.
 
 *Blameless: everyone acted in good faith with what they knew. We fix systems, not people.*

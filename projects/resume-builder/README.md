@@ -32,6 +32,8 @@ sequenceDiagram
 
 ## Timeline — Fall 2026
 
+New to these terms? See [words we use](../../docs/how-we-run-projects/README.md#words-we-use).
+
 ```mermaid
 gantt
   title Resume builder — Fall 2026
