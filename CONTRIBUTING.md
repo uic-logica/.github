@@ -1,30 +1,45 @@
-# Contributing to LOGICA @ UIC
+# Contributing
 
-## Workflow
+**Members only.** Contributions come from LOGICA @ UIC members in the `uic-logica` GitHub org. Pull requests from outside the org are closed. Not a member? [Join LOGICA](https://logicauic-logica5.vercel.app/join) first.
 
-1. Pick up (or file) an issue on the relevant repo's board — or use `/logica-issue` to file one in the right format.
-2. Branch off `main`: `yourname/short-description` (e.g. `maria/feed-endpoint`).
-3. Commit, push, open a PR against `main`. Fill out the PR template — link the issue. `/logica-pr` does steps 2-3 for you, including running lint/typecheck first.
-4. CI (lint + typecheck) must pass.
-5. A reviewer approves — `/logica-review` runs the same checklist a human reviewer would, catch issues before it's a human's turn. A maintainer merges.
+**Lead:** Nicolas Rufino ([@nicolasrufino](https://github.com/nicolasrufino)) — sets priorities and deadlines, reviews and merges.
 
-Nobody pushes directly to `main` — even leads go through a PR. This isn't bureaucracy for its own sake, it's so a second person always looks at what's shipping to a site members and partners see.
+## The workflow
 
-## Proposing your own idea
+```mermaid
+flowchart LR
+  I["1 · Issue<br/>labeled team: …"] --> B["2 · Branch<br/>yourname/short-thing"]
+  B --> P["3 · Pull request<br/>template filled"]
+  P --> C{"4 · CI green?<br/>lint · types · tests"}
+  C -- no --> B
+  C -- yes --> R["5 · 1 approval"]
+  R --> M["6 · Lead merges"]
+  style M fill:#FECC15,color:#111
+```
 
-The [ROADMAP.md](ROADMAP.md) Additions list is a suggestion, not a required list. Got something else you want to build that fits LOGICA's structure and vision? You don't need permission — just tell us. See [`additions/README.md`](additions/README.md) for the two-step process (a short `.md` explaining it, then a PR).
+| Rule | Why |
+|---|---|
+| Every change starts as an issue with a `team: …` label | Anyone can see who's building what |
+| Branch `yourname/short-description`, never commit to `main` | Branch protection blocks it anyway |
+| One PR per change, linked with `Closes #N` | Small reviews ship faster |
+| Run `npm run lint` and `npx tsc --noEmit` before pushing | CI runs the same checks and blocks the merge |
+| Decisions go in the repo (issue, PR or doc), not only Discord | The public record is the point |
 
-## Claude Code skills
+## Team rhythm
 
-If you're using Claude Code, install the [`skills`](https://github.com/uic-logica/skills) plugin — it packages this workflow as `/` commands (`/logica-pr`, `/logica-review`, `/logica-test`, `/logica-issue`, `/logica-lean`) so you don't have to remember the steps above by hand. See that repo's README for install instructions.
+| When | What |
+|---|---|
+| Every 2 days · 15 min · Discord | What I did (including what my agents did) · what's next · what's blocking me |
+| Every change | Issue → branch → PR → review → merge |
 
-## Roles
+## Design
 
-- **Member** — branch + PR. Default for everyone who joins.
-- **Reviewer** — reviews and approves PRs in their area (frontend/backend/security).
-- **Maintainer** — can merge approved PRs, owns a repo area.
-- **Owner** — org admin.
+The night design is the only spec: [`frontend/design/logica.pen`](https://github.com/uic-logica/frontend/tree/main/design) + [`frontend/DESIGN.md`](https://github.com/uic-logica/frontend/blob/main/DESIGN.md). A new screen gets designed there before it's built.
+
+## Claude Code
+
+Install the [`skills`](https://github.com/uic-logica/skills) plugin: `/logica-pr`, `/logica-review`, `/logica-test`, `/logica-issue`, `/logica-lean` run this workflow for you.
 
 ## Local setup
 
-See each repo's own README for its specific setup (`frontend`, `backend`).
+Each repo's README: [frontend](https://github.com/uic-logica/frontend#readme) · [backend](https://github.com/uic-logica/backend#readme).

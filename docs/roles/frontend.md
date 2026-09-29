@@ -1,23 +1,12 @@
-# Role: Frontend Developer
+# Role: Frontend
 
-You own everything in the [`frontend`](https://github.com/uic-logica/frontend) repo — the site members and visitors actually see.
+You build what members and visitors see, in [`frontend`](https://github.com/uic-logica/frontend) (Next.js, Tailwind).
 
-## What you'll build
-- Pages: landing, team, feed, calendar/events, profiles, forms, spotlight, sponsor wall — see [Frontend page order](../../ROADMAP.md#frontend-page-order) for the order and the workflow. One page at a time, and the design is finished before any code is written.
-- All auth, data, and member-specific content comes from the backend API (`NEXT_PUBLIC_API_URL`). The backend is the source of truth — don't store real data client-side, don't fake an API response to unblock yourself, open a `backend` issue instead.
-- Tailwind for styling, GSAP for orchestrated motion, Lottie for vector animation — see [`frontend`'s DESIGN.md](https://github.com/uic-logica/frontend/blob/main/DESIGN.md) for the actual visual direction, when to reach for which tool, and the performance bar.
+| Do | Don't |
+|---|---|
+| Build from the night design: [`design/logica.pen`](https://github.com/uic-logica/frontend/tree/main/design) + DESIGN.md | Invent a new look for a page |
+| Get all data from the backend through `/api` | Fake API responses to unblock yourself — open a backend issue |
+| Handle loading, empty, error and signed-out states | Ship only the happy path |
+| Label fields, keep keyboard access and focus rings | Remove accessibility to simplify |
 
-## What good looks like
-- `npm run lint` and `tsc --noEmit` pass locally before you open a PR — CI runs the same checks and blocks merge if they fail.
-- Handle loading, empty, and error states, not just the happy path.
-- Accessible by default: semantic HTML, labeled form inputs, keyboard-navigable. Use the `accessibility` label if you spot a gap.
-
-## Where to start
-1. [CONTRIBUTING.md](../../CONTRIBUTING.md) — branch, PR, review, merge workflow.
-2. [ROADMAP.md](../../ROADMAP.md) — what step we're on, what depends on what.
-3. [`frontend`'s README](https://github.com/uic-logica/frontend/blob/main/README.md) — local setup.
-4. Install the [`skills`](https://github.com/uic-logica/skills) plugin — `/logica-pr`, `/logica-review`, `/logica-test`, `/logica-issue`, `/logica-lean` cover the steps in this doc as `/` commands.
-5. Pick up an open issue on `frontend` labeled `roadmap` (or `enhancement`/`bug` for anything else).
-
-## Who to ask
-Reviews and merge decisions go through the repo's maintainers (CODEOWNERS). If a feature needs a backend endpoint that doesn't exist yet, file it on `backend` and pick up something else in the meantime.
+**Before a PR:** `npm run lint` · `npx tsc --noEmit` · `npm test`. Start with the [frontend README](https://github.com/uic-logica/frontend#readme), then pick an issue labeled with your team.
