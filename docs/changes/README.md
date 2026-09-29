@@ -1,4 +1,4 @@
-# Change notes: Nicolas Rufino
+# Change notes
 
 > **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) · **Last reviewed:** Sep 29, 2026 · **Audience:** LOGICA members · **Type:** Index
 
