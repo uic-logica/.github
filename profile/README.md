@@ -14,7 +14,7 @@
 
 ---
 
-## 👀 For recruiters
+## For recruiters
 
 **What we've shipped (Aug–Sep 2026):** a full club platform — public site, @uic.edu accounts, a member dashboard, an exec workspace (money, outreach, insights, applications), speaker intake with an availability calendar, and a night redesign across all of it.
 
@@ -27,7 +27,7 @@
 | 🟢 | **Event replays in 3D** | Computer vision: phone video → Gaussian-splat scene in the browser, faces blurred |
 | ⚪ | **Mock interviewer** | Voice practice for roles in the tracker, via MCP |
 
-**📅 Demo days, Fall 2026** — each writeup, slides and retro land in the repo as the project ships:
+**Demo days, Fall 2026** — each writeup, slides and retro land in the repo as the project ships:
 
 | Demo | Date | Writeup |
 |---|---|---|
@@ -52,18 +52,18 @@ flowchart LR
 |---|---|
 | A large feature, end to end | [frontend#88 — night redesign across site and dashboard](https://github.com/uic-logica/frontend/pull/88) |
 | Backend + frontend shipped together | [backend#64](https://github.com/uic-logica/backend/pull/64) + [frontend#91](https://github.com/uic-logica/frontend/pull/91) — Software Teams applications |
-| How work is planned | [Roadmap](https://github.com/uic-logica/.github/blob/main/ROADMAP.md) · [team pages](https://github.com/uic-logica/.github/tree/main/projects) |
+| How work is planned | [Roadmap](https://github.com/uic-logica/.github/blob/main/ROADMAP.md) · [project folders](https://github.com/uic-logica/.github/tree/main/projects) |
 | How people are placed on teams | [Software Teams — Fall 2026](https://github.com/uic-logica/.github/blob/main/docs/guides/software-teams-fall-2026.md) |
 
 **Stack:** Next.js 16 · TypeScript · Tailwind · Prisma 7 · Postgres (Supabase) · Auth.js · Vercel · Vitest · GitHub Actions
 
 ---
 
-## 🛠 For LOGICA members
+## For LOGICA members
 
 1. **Apply to a Software Team:** [dashboard → Software Teams](https://logicauic-logica5.vercel.app/dashboard/teams) (sign up with your @uic.edu email).
 2. **Read how we work:** [CONTRIBUTING](https://github.com/uic-logica/.github/blob/main/CONTRIBUTING.md) — issue → branch → PR → review → merge.
-3. **Find your team's work:** [team pages](https://github.com/uic-logica/.github/tree/main/projects) and issues labeled `team: …`.
+3. **Find your team's work:** [project folders](https://github.com/uic-logica/.github/tree/main/projects) and issues labeled `team: …`.
 4. **Set up locally:** [frontend](https://github.com/uic-logica/frontend#readme) · [backend](https://github.com/uic-logica/backend#readme) · [Claude Code skills](https://github.com/uic-logica/skills).
 
 Contributions are **members only**.
@@ -74,3 +74,7 @@ Contributions are **members only**.
 | [backend](https://github.com/uic-logica/backend) | API, auth, database |
 | [.github](https://github.com/uic-logica/.github) | Roadmap, workflow, team pages, documents |
 | [skills](https://github.com/uic-logica/skills) | Claude Code commands for our workflow |
+
+---
+
+<sub>Owner: Nicolas Rufino · Last reviewed: Sep 29, 2026</sub>
