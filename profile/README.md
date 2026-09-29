@@ -35,7 +35,7 @@
 | 🟠 Resume builder | Thu Nov 19 | [projects/resume-builder/demos](https://github.com/uic-logica/.github/tree/main/projects/resume-builder/demos) |
 | 🟢 Event replays · ⚪ Mock interviewer | Thu Dec 3 (showcase) | [projects](https://github.com/uic-logica/.github/tree/main/projects) |
 
-Planned like Google, sized for students: OKRs, design docs and reviews, Friday releases, launch checklists, blameless retros — [how we run projects](https://github.com/uic-logica/.github/blob/main/docs/program/README.md).
+Planned like Google, sized for students: OKRs, design docs and reviews, Friday releases, launch checklists, blameless retros — [how we run projects](https://github.com/uic-logica/.github/blob/main/docs/how-we-run-projects/README.md).
 
 **How the team runs** — every change is public:
 
@@ -53,7 +53,7 @@ flowchart LR
 | A large feature, end to end | [frontend#88 — night redesign across site and dashboard](https://github.com/uic-logica/frontend/pull/88) |
 | Backend + frontend shipped together | [backend#64](https://github.com/uic-logica/backend/pull/64) + [frontend#91](https://github.com/uic-logica/frontend/pull/91) — Software Teams applications |
 | How work is planned | [Roadmap](https://github.com/uic-logica/.github/blob/main/ROADMAP.md) · [team pages](https://github.com/uic-logica/.github/tree/main/projects) |
-| How people are placed on teams | [Software Teams — Fall 2026](https://github.com/uic-logica/.github/blob/main/docs/documents/software-teams-fall-2026.md) |
+| How people are placed on teams | [Software Teams — Fall 2026](https://github.com/uic-logica/.github/blob/main/docs/guides/software-teams-fall-2026.md) |
 
 **Stack:** Next.js 16 · TypeScript · Tailwind · Prisma 7 · Postgres (Supabase) · Auth.js · Vercel · Vitest · GitHub Actions
 

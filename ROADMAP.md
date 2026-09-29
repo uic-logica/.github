@@ -23,7 +23,7 @@ flowchart LR
 | Review applications, interviews, team placement | exec dashboard → Applications | 🟡 In progress |
 | Team kickoffs | Thu Oct 1 · issues labeled `team: …` | ⚪ After placement |
 
-Placement rule: **people who have contributed the most get priority**, then the application and a short interview. Details: [Software Teams — Fall 2026](docs/documents/software-teams-fall-2026.md).
+Placement rule: **people who have contributed the most get priority**, then the application and a short interview. Details: [Software Teams — Fall 2026](docs/guides/software-teams-fall-2026.md).
 
 ## Next — the products
 
@@ -48,7 +48,7 @@ Every product starts with a **two-week spike**: prove the hard part works on one
 | 🟢 Event replays | — | Tue Dec 1 | **Thu Dec 3** (showcase) | — | Sat Dec 5 |
 | ⚪ Mock interviewer | — | — | **Thu Dec 3** (preview) | — | Sat Dec 5 |
 
-Code ships every Friday from **Oct 23** (release train). Demo writeups, slides and retros land in each `projects/<team>/` folder. Full calendar and the practices behind it: [How we run projects](docs/program/README.md).
+Code ships every Friday from **Oct 23** (release train). Demo writeups, slides and retros land in each `projects/<team>/` folder. Full calendar and the practices behind it: [How we run projects](docs/how-we-run-projects/README.md).
 
 ## Before — how we got here (Aug–Sep 2026)
 
