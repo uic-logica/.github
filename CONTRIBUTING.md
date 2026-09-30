@@ -2,7 +2,7 @@
 
 > **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) · **Last reviewed:** Sep 29, 2026 · **Audience:** LOGICA members · **Type:** Reference
 
-**Members only.** Contributions come from LOGICA @ UIC members in the `uic-logica` GitHub org. Pull requests from outside the org are closed. Not a member? [Join LOGICA](https://logicauic-logica5.vercel.app/join) first.
+**Members only.** Contributions come from LOGICA @ UIC members in the `uic-logica` GitHub org. Pull requests from outside the org are closed. Not a member? [Join LOGICA](https://logicauic.org/join) first.
 
 **Lead:** Nicolas Rufino ([@nicolasrufino](https://github.com/nicolasrufino)) — sets priorities and deadlines, reviews and merges.
 

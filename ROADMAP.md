@@ -19,7 +19,7 @@ flowchart LR
 
 | What | Where | Status |
 |---|---|---|
-| Members apply to Software Teams from the dashboard | [site](https://logicauic-logica5.vercel.app/dashboard/teams) · frontend#91 · backend#64 | 🟢 Open |
+| Members apply to Software Teams from the dashboard | [site](https://logicauic.org/dashboard/teams) · frontend#91 · backend#64 | 🟢 Open |
 | Review applications, interviews, team placement | exec dashboard → Applications | 🟡 In progress |
 | Team kickoffs | Thu Oct 1 · issues labeled `team: …` | ⚪ After placement |
 
