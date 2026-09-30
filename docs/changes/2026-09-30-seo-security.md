@@ -2,7 +2,7 @@
 
 > **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) · **Last reviewed:** Sep 30, 2026 · **Audience:** LOGICA members · **Type:** Change note
 >
-> **PRs:** frontend#107 · backend#74
+> **PRs:** frontend#107 · backend#74 · frontend#108
 
 ## Why
 
@@ -28,6 +28,7 @@ flowchart LR
 | Security headers | HSTS only | CSP (nonce), HSTS preload, X-Frame-Options, nosniff, Referrer-Policy, Permissions-Policy, COOP |
 | Extras | — | Web manifest, `/.well-known/security.txt`, Event structured data, self-hosted fonts |
 | SSL | Vercel / Let's Encrypt, auto-renewed | unchanged (already A-grade) |
+| Favicon (frontend#108) | black square | round white LOGICA badge, same as the dashboard |
 
 ## Not done (needs a person)
 
