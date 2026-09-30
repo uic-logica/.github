@@ -6,7 +6,7 @@
 
 **Software lead:** Nicolas Rufino · [@nicolasrufino](https://github.com/nicolasrufino) — owns every product, sets the deadlines, reviews and merges.
 
-[**Live site**](https://logicauic-logica5.vercel.app) · [Roadmap](https://github.com/uic-logica/.github/blob/main/ROADMAP.md) · [How we work](https://github.com/uic-logica/.github/blob/main/CONTRIBUTING.md)
+[**Live site**](https://logicauic.org) · [Roadmap](https://github.com/uic-logica/.github/blob/main/ROADMAP.md) · [How we work](https://github.com/uic-logica/.github/blob/main/CONTRIBUTING.md)
 
 | 74 | 71 | 13 | 5 weeks |
 |:--:|:--:|:--:|:--:|
@@ -61,7 +61,7 @@ flowchart LR
 
 ## For LOGICA members
 
-1. **Apply to a Software Team:** [dashboard → Software Teams](https://logicauic-logica5.vercel.app/dashboard/teams) (sign up with your @uic.edu email).
+1. **Apply to a Software Team:** [dashboard → Software Teams](https://logicauic.org/dashboard/teams) (sign up with your @uic.edu email).
 2. **Read how we work:** [CONTRIBUTING](https://github.com/uic-logica/.github/blob/main/CONTRIBUTING.md) — issue → branch → PR → review → merge.
 3. **Find your team's work:** [project folders](https://github.com/uic-logica/.github/tree/main/projects) and issues labeled `team: …`.
 4. **Set up locally:** [frontend](https://github.com/uic-logica/frontend#readme) · [backend](https://github.com/uic-logica/backend#readme) · [Claude Code skills](https://github.com/uic-logica/skills).

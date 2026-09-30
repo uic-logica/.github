@@ -54,7 +54,7 @@ Pick your hours honestly when you apply. A steady 4 hours beats a promised 15.
 
 ![How to join](img/how-to-join.png)
 
-1. Create an account at [the LOGICA site](https://logicauic-logica5.vercel.app/signup) with your **@uic.edu** email.
+1. Create an account at [the LOGICA site](https://logicauic.org/signup) with your **@uic.edu** email.
 2. Dashboard → **Software Teams** (a gold note points to it).
 3. Required: GitHub username, hours a week (an estimate), 1st-choice project. Optional: 2nd/3rd choices, skills, resume (PDF or link), "Why are you special?". Drafts save as you type.
 4. We review it with the work you've already done. Only the exec board sees applications.

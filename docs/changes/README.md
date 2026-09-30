@@ -6,6 +6,7 @@ One note per PR: why it was made and what it changes. Newest first.
 
 | Date | PR | Note |
 |---|---|---|
+| Sep 30, 2026 | .github · frontend README | [Links point at logicauic.org](2026-09-30-new-domain.md) |
 | Sep 30, 2026 | frontend#107 · backend#74 · frontend#108 | [SEO and security hardening](2026-09-30-seo-security.md) |
 | Sep 30, 2026 | frontend#106 | [Frontend: sign-out that works every time](2026-09-30-frontend-signout.md) |
 | Sep 30, 2026 | frontend#104 · frontend#105 | [Home logos and favicon](2026-09-30-logos-and-favicon.md) |
