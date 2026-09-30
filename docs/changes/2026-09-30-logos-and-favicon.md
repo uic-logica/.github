@@ -20,10 +20,10 @@ flowchart LR
 
 | Change | What it means for you |
 |---|---|
-| Invenergy and Accenture logos | Official wordmarks, text turned white for the night background, brand accents kept |
+| Invenergy, Accenture (members land) and 84.51° (company visits) | Official wordmarks, text turned white for the night background, brand accents kept |
 | `icon.png` (256px) | Safari and modern browsers show the LOGICA logo in the tab |
 | `apple-icon.png` (180px) | iPhone home-screen bookmarks show the logo |
 
 ## Not done
 
-84.51° for Company Visits is waiting on a logo file; their site blocks automated downloads.
+Nothing pending.
