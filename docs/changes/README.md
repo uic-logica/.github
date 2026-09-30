@@ -6,6 +6,7 @@ One note per PR: why it was made and what it changes. Newest first.
 
 | Date | PR | Note |
 |---|---|---|
+| Sep 30, 2026 | backend#76 | [Backend: safer uploads, downloads and writes](2026-09-30-backend-upload-hardening.md) |
 | Sep 30, 2026 | .github#17 · frontend#109 · frontend#110 | [Links point at logicauic.org, and search finds "LOGICA UIC"](2026-09-30-new-domain.md) |
 | Sep 30, 2026 | frontend#107 · backend#74 · frontend#108 | [SEO and security hardening](2026-09-30-seo-security.md) |
 | Sep 30, 2026 | frontend#106 | [Frontend: sign-out that works every time](2026-09-30-frontend-signout.md) |
