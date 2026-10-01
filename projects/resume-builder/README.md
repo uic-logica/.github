@@ -1,6 +1,6 @@
 # Resume builder
 
-> **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) · **Last reviewed:** Sep 29, 2026 · **Audience:** Members and recruiters · **Type:** Project page
+> **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) · **Last reviewed:** Oct 1, 2026 · **Audience:** Members and recruiters · **Type:** Project page
 
 **Label:** `team: resume-builder` · **Priority:** main focus
 
@@ -73,9 +73,13 @@ gantt
 
 | File | What | Status |
 |---|---|---|
+| [research.md](research.md) | LinkedIn limits, ATS formats, rendering and tailoring research | Complete Oct 1 |
+| [build-plan.md](build-plan.md) | Architecture, privacy, schedule, backlog and tests | Ready for kickoff |
 | [okrs.md](okrs.md) | Objectives and key results, graded 0–1 | Due Tue Oct 6 |
 | [design-doc.md](design-doc.md) | 1–3 page design doc | See timeline |
 | [status/](status/) | Weekly snippet every Monday | From Mon Oct 12 |
 | [launch-checklist.md](launch-checklist.md) | Must pass before the public release | Before the demo |
 | [demos/](demos/) | Demo day writeup, slides, video | 2026-11-19 |
 | [retro.md](retro.md) | Blameless retro and findings | After the demo |
+
+**Decision:** LinkedIn supplies the existing copied photo only; member-confirmed structured data supplies experience because self-serve OIDC does not expose work history.
