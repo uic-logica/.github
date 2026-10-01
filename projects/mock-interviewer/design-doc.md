@@ -1,6 +1,6 @@
 # Mock interviewer — design doc
 
-> **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) (draft v0) · **Last reviewed:** Sep 29, 2026 · **Audience:** Mock interviewer team · **Type:** Design doc · **Status:** Draft v0. One-pager due Sun, Nov 8; doc due Sun, Nov 15; review Tue, Nov 17, 2026.
+> **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) (draft v0) · **Last reviewed:** Oct 1, 2026 · **Audience:** Mock interviewer team · **Type:** Design doc · **Status:** Draft v0. One-pager due Sun, Nov 8; doc due Sun, Nov 15; review Tue, Nov 17, 2026.
 
 ## Context and scope
 
@@ -28,5 +28,8 @@ flowchart LR
 
 ## Open questions
 
-1. Browser voice (Web Speech API) or the AI client's own voice mode?
-2. What feedback rubric (STAR structure, clarity, specifics)?
+Resolved — interaction: text chat for Dec 3 because it proves the loop without browser speech, audio privacy, or realtime transport risk; evaluate a cascaded voice pipeline in Spring 2027.
+
+Resolved — feedback: a versioned STAR rubric scores situation/task, action, result/reflection, relevance, and communication, with transcript evidence and no hiring prediction.
+
+See the supporting [research](research.md) and implementation [build plan](build-plan.md).
