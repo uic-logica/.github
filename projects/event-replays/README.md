@@ -66,6 +66,8 @@ gantt
 |---|---|---|
 | [okrs.md](okrs.md) | Objectives and key results, graded 0–1 | Due Tue Oct 6 |
 | [design-doc.md](design-doc.md) | 1–3 page design doc | See timeline |
+| [research.md](research.md) | Capture, formats, viewers, cost, privacy and v1 recommendation | Ready |
+| [build-plan.md](build-plan.md) | Architecture, runbook, schedule, backlog, risks and tests | Ready |
 | [status/](status/) | Weekly snippet every Monday | From Mon Oct 12 |
 | [launch-checklist.md](launch-checklist.md) | Must pass before the public release | Before the demo |
 | [demos/](demos/) | Demo day writeup, slides, video | 2026-12-03 |
