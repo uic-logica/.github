@@ -45,6 +45,10 @@ flowchart LR
 
 ## Open questions
 
-1. GPU provider and budget (Modal or RunPod)?
-2. Who films at events, and on which phone?
-3. Where do scene files live (Supabase Storage vs Vercel Blob)?
+Resolved — processing: Scaniverse + SuperSplat for v1, because it removes a demo-critical GPU service; keep nerfstudio/gsplat as the open-source follow-up.
+
+Resolved — capture: a named capture owner uses a tested supported phone and the [capture-day runbook](build-plan.md#capture-day-runbook), because repeatable coverage and consent matter more than phone brand.
+
+Resolved — storage: Vercel Blob with direct client uploads, because the sites already run on Vercel and scene files exceed the 4.5 MB function-body limit; revisit R2 if bandwidth cost grows.
+
+Evidence and execution details: [research](research.md) · [build plan](build-plan.md).
