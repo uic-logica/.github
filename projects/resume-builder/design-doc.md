@@ -1,6 +1,6 @@
 # Resume builder — design doc
 
-> **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) (draft v0) · **Last reviewed:** Sep 29, 2026 · **Audience:** Resume builder team · **Type:** Design doc · **Status:** Draft v0. The team owns it from kickoff (Oct 1); review Wed, Oct 14, 2026.
+> **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) (draft v0) · **Last reviewed:** Oct 1, 2026 · **Audience:** Resume builder team · **Type:** Design doc · **Status:** Draft v0. The team owns it from kickoff (Oct 1); review Wed, Oct 14, 2026.
 
 ## Context and scope
 
@@ -43,7 +43,7 @@ sequenceDiagram
 |---|---|
 | Call an AI API from the backend | Costs the club tokens and adds a key to protect |
 | A résumé editor in the browser | Slower to build and doesn't tailor per posting |
-| LaTeX rendering | Heavy on serverless; HTML → PDF is enough |
+| LaTeX rendering | Heavy on serverless; React-pdf keeps the v1 renderer in the existing TypeScript/React stack |
 
 ## Cross-cutting concerns
 
@@ -56,6 +56,9 @@ sequenceDiagram
 
 ## Open questions
 
-1. Which template exactly? It should be a widely used single-page CS layout; the team picks one at the design review.
-2. Does `get_posting` need the opportunity board, or can members paste a posting URL for v1?
-3. Where do we explain to members how to connect their AI client?
+Resolved choices and execution detail: [research](research.md) · [build plan](build-plan.md).
+
+1. **Template:** one US Letter, single-column, text-only React-pdf layout inspired by Jake's Resume—ATS-safe and lighter on Vercel than Chromium/TeX.
+2. **Posting:** accept pasted posting text in a new owner-scoped target row; adapt to the opportunity-board tracker if its equivalent model lands first.
+3. **AI client:** explain setup and the external-provider privacy boundary on MCP Connections and the resume empty state.
+4. **LinkedIn:** keep OIDC for the copied photo only; work history comes from member-confirmed structured entry because self-serve scopes do not expose experience.
