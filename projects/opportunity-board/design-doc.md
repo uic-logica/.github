@@ -8,6 +8,8 @@ Members hunt for internships across dozens of career pages, miss deadlines, and 
 
 **Builds on:** the application and check-in backend by **Om Patel**, the partner inquiry pipeline (partner roles feed straight in), and the notifications and daily cron already running on the backend.
 
+**Execution details:** [source research](research.md) · [build plan and issue backlog](build-plan.md)
+
 ## Goals and non-goals
 
 | Goals (v1.0, Nov 13, 2026) | Non-goals |
@@ -62,8 +64,8 @@ flowchart LR
 
 [MVP, Oct 30, 2026](https://github.com/uic-logica/backend/milestone/1) → [v1.0, Nov 13, 2026](https://github.com/uic-logica/backend/milestone/2). Dates are in the [project timeline](README.md#timeline--fall-2026).
 
-## Open questions
+## Decisions and open questions
 
-1. Which 3 sources first? (Proposal: Greenhouse, Lever, SimplifyJobs' list.)
-2. Should members suggest roles, and who approves them?
-3. How long do closed roles stay visible in trackers?
+- **Sources:** Greenhouse, Lever and Ashby first: each has a documented public JSON job-board API; Simplify has no reusable license. See [research](research.md#decision).
+- **Member suggestions:** members can add private tracker entries; only board members can promote a manual/partner role to the shared feed, using the existing server-side board guard.
+- **Closed roles:** remove them from the feed after two successful source misses; keep the snapshot indefinitely in a member's private tracker until that member deletes it.
