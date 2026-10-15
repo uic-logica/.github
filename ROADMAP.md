@@ -1,8 +1,8 @@
 # Roadmap
 
-> **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) · **Last reviewed:** Sep 29, 2026 · **Audience:** Members and recruiters · **Type:** Plan
+> **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) · **Last reviewed:** Oct 15, 2026 · **Audience:** Members and recruiters · **Type:** Plan
 
-LOGICA @ UIC is building two things: **the club site** (live) and **four products that help students get hired** (starting October 2026, one team each).
+LOGICA @ UIC is building two things: **the club site** (live) and **four products that help students get hired** (starting October 2026, one team each). The public overview is on [logicauic.org/projects](https://logicauic.org/projects).
 
 ```mermaid
 flowchart LR
@@ -68,6 +68,9 @@ timeline
          : LinkedIn on member profiles
   Sep 29 : Software Teams applications live
          : Cleanup — issues moved to the lead, work organized by team
+  Oct 15 : V4 design: site and dashboard share one light and dark look
+         : Projects page on the site; the board edits events from the dashboard
+         : Dashboard opens things where you click and loads from cache
 ```
 
 **What changed and why**
@@ -75,7 +78,7 @@ timeline
 | Before | Now | Why |
 |---|---|---|
 | Numbered steps, one person per step | One team per product | Steps finished; products need small teams with clear owners |
-| Mockup first, then code | The night design in [`frontend/design/logica.pen`](https://github.com/uic-logica/frontend/tree/main/design) + DESIGN.md is the only spec | Waiting on mockups stalled pages for days |
+| Mockup first, then code | The V4 design in [`frontend/design/logica.pen`](https://github.com/uic-logica/frontend/tree/main/design) + DESIGN.md is the spec (it replaced the night design on Oct 15) | Waiting on mockups stalled pages for days |
 | Passwordless email codes | Passwords, @uic.edu sign-up | Code delivery and callbacks needed more work behind the proxy; paused and kept in `backend/archive/passwordless`, not deleted |
 | Issues spread across everyone | All open issues owned by the lead until teams are placed | A clean start; teams pick up labeled issues after placement |
 
@@ -84,8 +87,6 @@ timeline
 | Issue | What | Label |
 |---|---|---|
 | backend#41 | Delete the seeded `qa.*` accounts before launch | `team: site` |
-| backend#42 | Automate production migrations (today they're run by hand) | `team: site` |
 | backend#43 | Connect Google Drive for exec Documents | `team: site` |
-| backend#55 | Make accounts UIC-only in production | `team: site` |
 | frontend#54 | Dashboard UI pass: ask less of the user | `team: site` |
 | frontend#9 | Member spotlight | `team: site` |

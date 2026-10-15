@@ -37,7 +37,7 @@ flowchart LR
 
 ## Design
 
-The night design is the only spec: [`frontend/design/logica.pen`](https://github.com/uic-logica/frontend/tree/main/design) + [`frontend/DESIGN.md`](https://github.com/uic-logica/frontend/blob/main/DESIGN.md). A new screen gets designed there before it's built.
+The V4 design is the spec: [`frontend/design/logica.pen`](https://github.com/uic-logica/frontend/tree/main/design) + [`frontend/DESIGN.md`](https://github.com/uic-logica/frontend/blob/main/DESIGN.md). A new screen gets designed there before it's built.
 
 ## Claude Code
 
