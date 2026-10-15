@@ -15,27 +15,27 @@ flowchart LR
   style C fill:#2F6FD6,color:#fff,stroke:#2F6FD6
 ```
 
-## Now — October 2026
+## Now: October 2026
 
 | What | Where | Status |
 |---|---|---|
-| Members apply to Software Teams from the dashboard | [site](https://logicauic.org/dashboard/teams) · frontend#91 · backend#64 | 🟢 Open |
+| Members apply to Software Teams from the Projects page | [logicauic.org/projects](https://logicauic.org/projects) · frontend#91 · backend#64 | 🟢 Open |
 | Review applications, interviews, team placement | exec dashboard → Applications | 🟡 In progress |
 | Team kickoffs | Thu Oct 1 · issues labeled `team: …` | ⚪ After placement |
 
-Placement rule: **people who have contributed the most get priority**, then the application and a short interview. Details: [Software Teams — Fall 2026](docs/guides/software-teams-fall-2026.md).
+Placement rule: **people who have contributed the most get priority**, then the application and a short interview. Details: [Software Teams: Fall 2026](docs/guides/software-teams-fall-2026.md).
 
-## Next — the products
+## Next: the products
 
 Each product has a team page with scope, first milestone and roles.
 
 | Product | Team page | Label | Priority |
 |---|---|---|---|
-| Opportunity board — scrapers, feed by class year, tracker | [projects/opportunity-board/](projects/opportunity-board/) | `team: opportunity-board` | 🔵 Main focus |
-| Resume builder — your own AI over MCP, one proven template | [projects/resume-builder/](projects/resume-builder/) | `team: resume-builder` | 🔵 Main focus |
-| Event replays in 3D — computer vision, faces blurred | [projects/event-replays/](projects/event-replays/) | `team: event-replays` | ⚪ Next |
-| Mock interviewer — voice practice via MCP | [projects/mock-interviewer/](projects/mock-interviewer/) | `team: mock-interviewer` | ⚪ Later |
-| The site itself — upkeep | [projects/site/](projects/site/) | `team: site` | Ongoing |
+| Opportunity board: scrapers, feed by class year, tracker | [projects/opportunity-board/](projects/opportunity-board/) | `team: opportunity-board` | 🔵 Main focus |
+| Resume builder: your own AI over MCP, one proven template | [projects/resume-builder/](projects/resume-builder/) | `team: resume-builder` | 🔵 Main focus |
+| Event replays in 3D: computer vision, faces blurred | [projects/event-replays/](projects/event-replays/) | `team: event-replays` | ⚪ Next |
+| Mock interviewer: interview practice with feedback via MCP (text first) | [projects/mock-interviewer/](projects/mock-interviewer/) | `team: mock-interviewer` | ⚪ Later |
+| The site itself: upkeep | [projects/site/](projects/site/) | `team: site` | Ongoing |
 
 Every product starts with a **two-week spike**: prove the hard part works on one laptop before it touches the site.
 
@@ -45,29 +45,29 @@ Every product starts with a **two-week spike**: prove the hard part works on one
 |---|---|---|---|---|---|
 | 🔵 Opportunity board | Fri Oct 30 | Sun Nov 8 | **Thu Nov 12** | Fri Nov 13 | Tue Nov 17 |
 | 🟠 Resume builder | Fri Oct 30 | Sun Nov 15 | **Thu Nov 19** | Fri Nov 20 | Mon Nov 23 |
-| 🟢 Event replays | — | Tue Dec 1 | **Thu Dec 3** (showcase) | — | Sat Dec 5 |
-| ⚪ Mock interviewer | — | — | **Thu Dec 3** (preview) | — | Sat Dec 5 |
+| 🟢 Event replays | n/a | Tue Dec 1 | **Thu Dec 3** (showcase) | n/a | Sat Dec 5 |
+| ⚪ Mock interviewer | n/a | n/a | **Thu Dec 3** (preview) | n/a | Sat Dec 5 |
 
 Code ships every Friday from **Oct 23** (release train). Demo writeups, slides and retros land in each `projects/<team>/` folder. Full calendar and the practices behind it: [How we run projects](docs/how-we-run-projects/README.md).
 
-## Before — how we got here (Aug–Sep 2026)
+## Before: how we got here (Aug–Sep 2026)
 
 ```mermaid
 timeline
   title Building the LOGICA site
-  Aug 26 : Kickoff — both repos, CI, branch protection
+  Aug 26 : Kickoff, both repos, CI, branch protection
          : Step-by-step plan (FE 0–4, BE 1–7), one owner per step
-  Sep 16 : Dropped mockup-first design — build straight from DESIGN.md
+  Sep 16 : Dropped mockup-first design, build straight from DESIGN.md
          : Speaker / guest intake page
   Sep 18–21 : Membership applications (/join)
-            : Dashboard rebuild — five roles, exec workspace
+            : Dashboard rebuild, five roles, exec workspace
             : Passwordless codes replaced by passwords (archived, not deleted)
   Sep 22–23 : Account sign-up, speaker availability calendar
-            : QA day — every page tested, one area per person
+            : QA day, every page tested, one area per person
   Sep 28 : Night redesign (Variant E) across site and dashboard
          : LinkedIn on member profiles
   Sep 29 : Software Teams applications live
-         : Cleanup — issues moved to the lead, work organized by team
+         : Cleanup, issues moved to the lead, work organized by team
   Oct 15 : V4 design: site and dashboard share one light and dark look
          : Projects page on the site; the board edits events from the dashboard
          : Dashboard opens things where you click and loads from cache

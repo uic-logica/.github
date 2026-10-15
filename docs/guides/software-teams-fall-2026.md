@@ -1,4 +1,4 @@
-# LOGICA Software Teams — Fall 2026
+# LOGICA Software Teams: Fall 2026
 
 > **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) · **Last reviewed:** Sep 29, 2026 · **Audience:** LOGICA members · **Type:** Conceptual
 
@@ -50,12 +50,12 @@ Pick your hours honestly when you apply. A steady 4 hours beats a promised 15.
 
 ## How to join
 
-![Where to click](img/where-to-click.png)
+![Where to click: Apply to a Software Team, at the bottom of the Projects page](img/where-to-click.png)
 
 ![How to join](img/how-to-join.png)
 
 1. Create an account at [the LOGICA site](https://logicauic.org/signup) with your **@uic.edu** email.
-2. Dashboard → **Software Teams** (a gold note points to it).
+2. Go to [logicauic.org/projects](https://logicauic.org/projects) and click **Apply to a Software Team** (or open [the application](https://logicauic.org/dashboard/teams) directly).
 3. Required: GitHub username, hours a week (an estimate), 1st-choice project. Optional: 2nd/3rd choices, skills, resume (PDF or link), "Why are you special?". Drafts save as you type.
 4. We review it with the work you've already done. Only the exec board sees applications.
 5. Email → short interview with LOGICA → placed on a team (Discord channel + GitHub issues).
