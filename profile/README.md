@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/uic-logica/frontend/main/docs/screenshots/home-desktop.jpg" alt="The LOGICA @ UIC site: night painting of the Chicago skyline" width="100%">
+<img src="https://raw.githubusercontent.com/uic-logica/frontend/main/docs/screenshots/home-desktop.jpg" alt="The LOGICA @ UIC site: a warm painting of the Chicago skyline" width="100%">
 
 # LOGICA @ UIC
 
@@ -6,9 +6,9 @@
 
 **Software lead:** Nicolas Rufino · [@nicolasrufino](https://github.com/nicolasrufino) — owns every product, sets the deadlines, reviews and merges.
 
-[**Live site**](https://logicauic.org) · [Roadmap](https://github.com/uic-logica/.github/blob/main/ROADMAP.md) · [How we work](https://github.com/uic-logica/.github/blob/main/CONTRIBUTING.md)
+[**Live site**](https://logicauic.org) · [Projects](https://logicauic.org/projects) · [Roadmap](https://github.com/uic-logica/.github/blob/main/ROADMAP.md) · [How we work](https://github.com/uic-logica/.github/blob/main/CONTRIBUTING.md)
 
-| 74 | 71 | 13 | 5 weeks |
+| 120 | 85 | 13 | 5 weeks |
 |:--:|:--:|:--:|:--:|
 | merged PRs | closed issues | members | from kickoff to a live site |
 
@@ -16,7 +16,7 @@
 
 ## For recruiters
 
-**What we've shipped (Aug–Sep 2026):** a full club platform — public site, @uic.edu accounts, a member dashboard, an exec workspace (money, outreach, insights, applications), speaker intake with an availability calendar, and a night redesign across all of it.
+**What we've shipped (Aug–Oct 2026):** a full club platform: public site, @uic.edu accounts, a member dashboard, an exec workspace (money, outreach, insights, applications, speakers, event editing), speaker intake with an availability calendar, and the V4 design across all of it, in light and dark.
 
 **What we're building next (Fall 2026):** four products that help students get hired, one team each.
 
@@ -50,7 +50,8 @@ flowchart LR
 
 | See | Where |
 |---|---|
-| A large feature, end to end | [frontend#88 — night redesign across site and dashboard](https://github.com/uic-logica/frontend/pull/88) |
+| A large feature, end to end | [frontend#140: V4 redesign of the public site](https://github.com/uic-logica/frontend/pull/140) |
+| A UX pass driven by an audit of every screen | [frontend#142: things open where you click, stay linkable, load instantly](https://github.com/uic-logica/frontend/pull/142) |
 | Backend + frontend shipped together | [backend#64](https://github.com/uic-logica/backend/pull/64) + [frontend#91](https://github.com/uic-logica/frontend/pull/91) — Software Teams applications |
 | How work is planned | [Roadmap](https://github.com/uic-logica/.github/blob/main/ROADMAP.md) · [project folders](https://github.com/uic-logica/.github/tree/main/projects) |
 | How people are placed on teams | [Software Teams — Fall 2026](https://github.com/uic-logica/.github/blob/main/docs/guides/software-teams-fall-2026.md) |
