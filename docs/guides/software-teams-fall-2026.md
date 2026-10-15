@@ -1,4 +1,4 @@
-# LOGICA Software Teams — Fall 2026
+# LOGICA Software Teams: Fall 2026
 
 > **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) · **Last reviewed:** Sep 29, 2026 · **Audience:** LOGICA members · **Type:** Conceptual
 
