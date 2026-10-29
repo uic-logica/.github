@@ -10,7 +10,7 @@ Members get few chances to practice real interviews. This lets them rehearse by 
 
 ## Goals and non-goals
 
-| Goals (preview, Dec 3, 2026) | Non-goals |
+| Goals (preview) | Non-goals |
 |---|---|
 | One 10-minute behavioral interview, end to end | Grading candidates for the board |
 | Questions tailored to a role in the tracker | Storing audio recordings |
@@ -28,7 +28,7 @@ flowchart LR
 
 ## Open questions
 
-Resolved — interaction: text chat for Dec 3 because it proves the loop without browser speech, audio privacy, or realtime transport risk; evaluate a cascaded voice pipeline in Spring 2027.
+Resolved — interaction: text chat for the preview because it proves the loop without browser speech, audio privacy, or realtime transport risk; evaluate a cascaded voice pipeline in Spring 2027.
 
 Resolved — feedback: a versioned STAR rubric scores situation/task, action, result/reflection, relevance, and communication, with transcript evidence and no hiring prediction.
 

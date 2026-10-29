@@ -30,44 +30,9 @@ sequenceDiagram
 **Template:** one single-page layout recruiters already trust; bullets as "did X, measured by Y, by doing Z". No custom designs.
 **You learn:** MCP servers, tool design for AI agents, PDF rendering.
 
-## Timeline — Fall 2026
+## Timeline
 
-New to these terms? See [words we use](../../docs/how-we-run-projects/README.md#words-we-use).
-
-```mermaid
-gantt
-  title Resume builder — Fall 2026
-  dateFormat YYYY-MM-DD
-  axisFormat %b %d
-  Kickoff                 :milestone, 2026-10-01, 0d
-  Spike (MCP + schema)    :2026-10-05, 5d
-  Design doc              :2026-10-05, 7d
-  Design review           :milestone, 2026-10-14, 0d
-  Build to MVP            :2026-10-14, 16d
-  MVP (internal preview)  :milestone, 2026-10-30, 0d
-  Privacy + security review :milestone, 2026-11-06, 0d
-  Harden                  :2026-10-31, 15d
-  Code freeze             :milestone, 2026-11-15, 0d
-  Demo day                :crit, milestone, 2026-11-19, 0d
-  Public v1.0             :milestone, 2026-11-20, 0d
-  Retro                   :milestone, 2026-11-23, 0d
-```
-
-| Milestone | Date |
-|---|---|
-| Kickoff | Thu Oct 1 |
-| OKRs published | Tue Oct 6 |
-| Spike (MCP server + resume schema) | Oct 5–9 |
-| Design doc due | Sun Oct 11 |
-| Design review | Wed Oct 14 |
-| MVP · internal preview | Fri Oct 30 |
-| Privacy + security review | Fri Nov 6 |
-| Code freeze | Sun Nov 15 |
-| **Demo day** | **Thu Nov 19** |
-| Public v1.0 | Fri Nov 20 |
-| Retro | Mon Nov 23 |
-| Showcase (v1.1) | Thu Dec 3 |
-| OKR grades | Fri Dec 11 |
+**TBD.** The team hasn't started yet. Dates are set once people are placed and the team kicks off, and get added here as we move on.
 
 ## Artifacts
 
@@ -75,11 +40,11 @@ gantt
 |---|---|---|
 | [research.md](research.md) | LinkedIn limits, ATS formats, rendering and tailoring research | Complete Oct 1 |
 | [build-plan.md](build-plan.md) | Architecture, privacy, schedule, backlog and tests | Ready for kickoff |
-| [okrs.md](okrs.md) | Objectives and key results, graded 0–1 | Due Tue Oct 6 |
+| [okrs.md](okrs.md) | Objectives and key results, graded 0–1 | Due at kickoff |
 | [design-doc.md](design-doc.md) | 1–3 page design doc | See timeline |
-| [status/](status/) | Weekly snippet every Monday | From Mon Oct 12 |
+| [status/](status/) | Weekly snippet every Monday | Once the team starts |
 | [launch-checklist.md](launch-checklist.md) | Must pass before the public release | Before the demo |
-| [demos/](demos/) | Demo day writeup, slides, video | 2026-11-19 |
+| [demos/](demos/) | Demo day writeup, slides, video | TBD |
 | [retro.md](retro.md) | Blameless retro and findings | After the demo |
 
 **Decision:** LinkedIn supplies the existing copied photo only; member-confirmed structured data supplies experience because self-serve OIDC does not expose work history.

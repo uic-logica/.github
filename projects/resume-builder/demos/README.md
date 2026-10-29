@@ -4,7 +4,7 @@
 
 > This page is empty on purpose until demo day. The team fills it in; the outline below is what goes in it.
 
-**Scheduled:** 2026-11-19. The writeup lands in `demos/2026-11-19/README.md` the same day, with slides and a video link.
+**Scheduled:** TBD. The writeup lands in `demos/<date>/README.md` the same day, with slides and a video link.
 
 ```markdown
 # Resume builder Demo Day — <date>

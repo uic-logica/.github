@@ -2,7 +2,7 @@
 
 > **Owner:** [@nicolasrufino](https://github.com/nicolasrufino) · **Last reviewed:** Oct 15, 2026 · **Audience:** Members and recruiters · **Type:** Plan
 
-LOGICA @ UIC is building two things: **the club site** (live) and **four products that help students get hired** (starting October 2026, one team each). The public overview is on [logicauic.org/projects](https://logicauic.org/projects).
+LOGICA @ UIC is building two things: **the club site** (live) and **four products for UIC students** (one team each, starting once teams are placed). The public overview is on [logicauic.org/projects](https://logicauic.org/projects).
 
 ```mermaid
 flowchart LR
@@ -21,7 +21,7 @@ flowchart LR
 |---|---|---|
 | Members apply to Software Teams from the Projects page | [logicauic.org/projects](https://logicauic.org/projects) · frontend#91 · backend#64 | 🟢 Open |
 | Review applications, interviews, team placement | exec dashboard → Applications | 🟡 In progress |
-| Team kickoffs | Thu Oct 1 · issues labeled `team: …` | ⚪ After placement |
+| Team kickoffs | TBD · issues labeled `team: …` | ⚪ After placement |
 
 Placement rule: **people who have contributed the most get priority**, then the application and a short interview. Details: [Software Teams: Fall 2026](docs/guides/software-teams-fall-2026.md).
 
@@ -39,16 +39,9 @@ Each product has a team page with scope, first milestone and roles.
 
 Every product starts with a **two-week spike**: prove the hard part works on one laptop before it touches the site.
 
-### Demo days
+### Dates
 
-| Team | MVP (internal preview) | Code freeze | **Demo day** | Public release | Retro |
-|---|---|---|---|---|---|
-| 🔵 Opportunity board | Fri Oct 30 | Sun Nov 8 | **Thu Nov 12** | Fri Nov 13 | Tue Nov 17 |
-| 🟠 Resume builder | Fri Oct 30 | Sun Nov 15 | **Thu Nov 19** | Fri Nov 20 | Mon Nov 23 |
-| 🟢 Event replays | n/a | Tue Dec 1 | **Thu Dec 3** (showcase) | n/a | Sat Dec 5 |
-| ⚪ Mock interviewer | n/a | n/a | **Thu Dec 3** (preview) | n/a | Sat Dec 5 |
-
-Code ships every Friday from **Oct 23** (release train). Demo writeups, slides and retros land in each `projects/<team>/` folder. Full calendar and the practices behind it: [How we run projects](docs/how-we-run-projects/README.md).
+**TBD.** No team has started yet. Kickoffs, demo days and releases are set as each team starts, and get added here as we move on. Demo writeups, slides and retros land in each `projects/<team>/` folder. The practices behind it: [How we run projects](docs/how-we-run-projects/README.md).
 
 ## Before: how we got here (Aug–Sep 2026)
 

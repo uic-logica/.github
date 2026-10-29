@@ -116,20 +116,22 @@ Use the existing stateless bearer transport and `Caller` from `lib/mcp-token.ts`
 | MCP token | existing hashed `McpToken` | secret shown once; hash in DB | existing revoke path/cascade |
 | Member AI disclosure | no provider data stored by LOGICA | member chooses provider | member manages provider history |
 
-Before launch: publish plain-language consent covering data purpose, visibility, retention, AI-provider disclosure and deletion; run the Nov 6 privacy/security review. Logs must contain IDs/status, never resume content, posting text, tokens or PDF bytes.
+Before launch: publish plain-language consent covering data purpose, visibility, retention, AI-provider disclosure and deletion; run the privacy/security review. Logs must contain IDs/status, never resume content, posting text, tokens or PDF bytes.
 
 ## Schedule
 
-| Week | Dates | Exit condition |
+Dates are TBD: they're set at kickoff. Weeks count from kickoff.
+
+| Phase | Weeks | Exit condition |
 |---|---|---|
-| Kickoff + spike | Oct 1–9 | OKRs Oct 6; strict schema and `@react-pdf/renderer` produce an ATS-readable PDF; record cold/warm render time and bundle impact |
-| Design review | Oct 10–14 | Design doc and model/routes approved Wed Oct 14; no unresolved LinkedIn experience assumption |
-| Vertical slice | Oct 15–23 | Authenticated member edits facts, creates one target/version and downloads a PDF through real backend/frontend |
-| MVP | Oct 24–30 | All four MCP tools work from a real client; rules keyword check; internal preview Fri Oct 30 |
-| Privacy review + harden | Oct 31–Nov 6 | Data inventory, consent, authorization/deletion tests and privacy/security review pass Fri Nov 6 |
-| Harden + freeze | Nov 7–15 | Accessibility, narrow layout, PDF parsing QA, error/empty states; fixes only after Sun Nov 15 |
-| Demo + release | Nov 16–20 | Demo Thu Nov 19; public v1.0 Fri Nov 20 |
-| Retro + showcase | Nov 21–Dec 3 | Retro Mon Nov 23; measured feedback and v1.1 showcase Thu Dec 3 |
+| Kickoff + spike | 1–2 | OKRs published; strict schema and `@react-pdf/renderer` produce an ATS-readable PDF; record cold/warm render time and bundle impact |
+| Design review | 2 | Design doc and model/routes approved; no unresolved LinkedIn experience assumption |
+| Vertical slice | 3–4 | Authenticated member edits facts, creates one target/version and downloads a PDF through real backend/frontend |
+| MVP | 4–5 | All four MCP tools work from a real client; rules keyword check; internal preview |
+| Privacy review + harden | 6 | Data inventory, consent, authorization/deletion tests and privacy/security review pass |
+| Harden + freeze | 7–8 | Accessibility, narrow layout, PDF parsing QA, error/empty states; fixes only after code freeze |
+| Demo + release | 9 | Demo day; public v1.0 |
+| Retro + showcase | 10–11 | Retro; measured feedback and v1.1 at the showcase |
 
 ## Issue-ready backlog
 
@@ -183,11 +185,11 @@ Release commands remain the repository conventions: backend `npx prisma generate
 
 | Risk | Signal | Mitigation | Owner checkpoint |
 |---|---|---|---|
-| LinkedIn experience import is impossible | Team asks for more OAuth scopes | Photo-only boundary in product copy; manual facts first | Design review Oct 14 |
-| PDF fails ATS parsing | Extracted order differs or Greenhouse import loses fields | Single-column text template + fixture extraction | MVP Oct 30 |
-| Cross-member leak | Route loads by `id` without owner predicate | `userId` in every query; two-member regression suite | Privacy review Nov 6 |
+| LinkedIn experience import is impossible | Team asks for more OAuth scopes | Photo-only boundary in product copy; manual facts first | Design review |
+| PDF fails ATS parsing | Extracted order differs or Greenhouse import loses fields | Single-column text template + fixture extraction | MVP |
+| Cross-member leak | Route loads by `id` without owner predicate | `userId` in every query; two-member regression suite | Privacy review |
 | AI invents claims | New bullet contains unsupported metric/skill | Rules use existing bullets; member AI output always reviewed | Internal preview |
-| Resume overflows one page | Preview/render page count >1 | Length caps, warnings and deterministic section trimming; never silently drop content | MVP Oct 30 |
-| Renderer is too heavy on Vercel | Bundle/cold render exceeds spike budget | Measure #2; fall back to browser-side react-pdf, then remote rendering only after privacy review | Oct 9 |
+| Resume overflows one page | Preview/render page count >1 | Length caps, warnings and deterministic section trimming; never silently drop content | MVP |
+| Renderer is too heavy on Vercel | Bundle/cold render exceeds spike budget | Measure #2; fall back to browser-side react-pdf, then remote rendering only after privacy review | Spike |
 | Tracker model conflicts with opportunity board | Equivalent model lands first | Adapt before migration; avoid parallel models | Before #3 |
 | Uploaded export changes format | Parser fixture fails | Keep import optional; manual editor is always available | Harden phase |

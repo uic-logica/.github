@@ -27,13 +27,7 @@
 | 🟢 | **Event replays in 3D** | Computer vision: phone video → Gaussian-splat scene in the browser, faces blurred |
 | ⚪ | **Mock interviewer** | Interview practice for roles in the tracker, with feedback through your own AI (text first, voice later) |
 
-**Demo days, Fall 2026.** Each writeup, slides and retro land in the repo as the project ships:
-
-| Demo | Date | Writeup |
-|---|---|---|
-| 🔵 Opportunity board | Thu Nov 12 | [projects/opportunity-board/demos](https://github.com/uic-logica/.github/tree/main/projects/opportunity-board/demos) |
-| 🟠 Resume builder | Thu Nov 19 | [projects/resume-builder/demos](https://github.com/uic-logica/.github/tree/main/projects/resume-builder/demos) |
-| 🟢 Event replays · ⚪ Mock interviewer | Thu Dec 3 (showcase) | [projects](https://github.com/uic-logica/.github/tree/main/projects) |
+**Demo days: TBD.** Teams haven't started; dates get set as they do. Each writeup, slides and retro land in [projects](https://github.com/uic-logica/.github/tree/main/projects) as the project ships.
 
 Planned like Google, sized for students: OKRs, design docs and reviews, Friday releases, launch checklists, blameless retros. See [how we run projects](https://github.com/uic-logica/.github/blob/main/docs/how-we-run-projects/README.md).
 

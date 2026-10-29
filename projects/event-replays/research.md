@@ -4,7 +4,7 @@
 
 ## Decision
 
-Use **Scaniverse phone capture → SuperSplat cleanup/compression → SPZ → Vercel Blob → PlayCanvas viewer** for v1. Keep the original phone video as the accessible fallback. Do not build or operate a training service before the Dec 3 demo.
+Use **Scaniverse phone capture → SuperSplat cleanup/compression → SPZ → Vercel Blob → PlayCanvas viewer** for v1. Keep the original phone video as the accessible fallback. Do not build or operate a training service before the first demo.
 
 ## Capture options
 

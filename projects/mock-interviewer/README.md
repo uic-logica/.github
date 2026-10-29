@@ -6,7 +6,7 @@
 
 **Long-term vision:** practice interviews by voice for roles in your tracker, then get a transcript with feedback through MCP on the member's own AI account.
 
-**Dec 3 v0 choice:** authenticated text practice first, because it proves role-aware interviewing and feedback without adding audio or realtime-transport risk.
+**v0 choice:** authenticated text practice first, because it proves role-aware interviewing and feedback without adding audio or realtime-transport risk.
 
 | Milestone | Done when |
 |---|---|
@@ -16,43 +16,19 @@
 
 Starts after the opportunity board tracker exists. **You learn:** voice interfaces, prompt design, evaluation.
 
-## Timeline — Fall 2026
+## Timeline
 
-New to these terms? See [words we use](../../docs/how-we-run-projects/README.md#words-we-use).
-
-```mermaid
-gantt
-  title Mock interviewer — Fall 2026
-  dateFormat YYYY-MM-DD
-  axisFormat %b %d
-  One-pager               :2026-11-02, 7d
-  Design doc              :2026-11-09, 7d
-  Design review           :milestone, 2026-11-17, 0d
-  Spike                   :2026-11-16, 7d
-  Prototype               :2026-11-23, 10d
-  Preview demo (showcase) :crit, milestone, 2026-12-03, 0d
-  Retro                   :milestone, 2026-12-05, 0d
-```
-
-| Milestone | Date |
-|---|---|
-| One-pager due | Sun Nov 8 |
-| Design doc due | Sun Nov 15 |
-| Design review | Tue Nov 17 |
-| Spike | week of Nov 16 |
-| Prototype | week of Nov 23 |
-| **Preview demo (showcase)** | **Thu Dec 3** |
-| Retro | Sat Dec 5 |
+**TBD.** The team hasn't started yet. Dates are set once people are placed and the team kicks off, and get added here as we move on.
 
 ## Artifacts
 
 | File | What | Status |
 |---|---|---|
-| [okrs.md](okrs.md) | Objectives and key results, graded 0–1 | Due Tue Oct 6 |
+| [okrs.md](okrs.md) | Objectives and key results, graded 0–1 | Due at kickoff |
 | [design-doc.md](design-doc.md) | 1–3 page design doc | See timeline |
 | [research.md](research.md) | Prior art, interaction modes, cost, privacy, accessibility | Complete |
 | [build-plan.md](build-plan.md) | Architecture, schedule, backlog, rubric, risks, tests | Ready for issues |
-| [status/](status/) | Weekly snippet every Monday | From Mon Oct 12 |
+| [status/](status/) | Weekly snippet every Monday | Once the team starts |
 | [launch-checklist.md](launch-checklist.md) | Must pass before the public release | Before the demo |
-| [demos/](demos/) | Demo day writeup, slides, video | 2026-12-03 |
+| [demos/](demos/) | Demo day writeup, slides, video | TBD |
 | [retro.md](retro.md) | Blameless retro and findings | After the demo |

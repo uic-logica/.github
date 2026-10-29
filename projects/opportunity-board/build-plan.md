@@ -114,18 +114,20 @@ Add both new cron paths to the existing `backend/vercel.json`; keep the daily in
 
 ## Schedule
 
-| Week | Outcome | Fixed checkpoint |
+Dates are TBD: they're set at kickoff. Weeks count from kickoff.
+
+| Week | Outcome | Checkpoint |
 |---|---|---|
-| Oct 1–4 | Kickoff; confirm source allowlist, owners and local setup | **Kickoff Thu Oct 1** |
-| Oct 5–11 | Greenhouse spike; source/legal review; approve schema/API/UI design | OKRs Tue Oct 6; design doc Sun Oct 11 |
-| Oct 12–18 | Review design; merge schema, migration, normalizer and Greenhouse adapter | **Design review Tue Oct 13** |
-| Oct 19–25 | Lever + Ashby adapters; ingestion cron; feed API; dashboard shell | Friday release train |
-| Oct 26–30 | Feed filters, tracker CRUD, core unit/route tests; internal preview | **MVP Fri Oct 30** |
-| Oct 31–Nov 8 | Dedupe/closure hardening, reminders, accessibility, Playwright happy path, member QA | Mid-term OKR Tue Nov 3; **code freeze Sun Nov 8** |
-| Nov 9–13 | Fixes only; rollback rehearsal; demo assets and release notes | **Demo Thu Nov 12; v1.0 Fri Nov 13** |
-| Nov 14–20 | Retro; fix launch findings; measure source health and use | Retro Tue Nov 17 |
-| Nov 21–27 | v1.1: partner/manual roles only if v1 is stable; polish empty/error states | Friday release train |
-| Nov 28–Dec 3 | Rehearse showcase, verify metrics and docs, ship v1.1 | **Showcase Thu Dec 3** |
+| 1 | Kickoff; confirm source allowlist, owners and local setup | **Kickoff** |
+| 2 | Greenhouse spike; source/legal review; approve schema/API/UI design | OKRs published; design doc due |
+| 3 | Review design; merge schema, migration, normalizer and Greenhouse adapter | **Design review** |
+| 4 | Lever + Ashby adapters; ingestion cron; feed API; dashboard shell | Friday release train |
+| 5 | Feed filters, tracker CRUD, core unit/route tests; internal preview | **MVP** |
+| 6 | Dedupe/closure hardening, reminders, accessibility, Playwright happy path, member QA | Mid-term OKR check; **code freeze** |
+| 7 | Fixes only; rollback rehearsal; demo assets and release notes | **Demo day; v1.0** |
+| 8 | Retro; fix launch findings; measure source health and use | Retro |
+| 9 | v1.1: partner/manual roles only if v1 is stable; polish empty/error states | Friday release train |
+| 10 | Rehearse showcase, verify metrics and docs, ship v1.1 | **Showcase** |
 
 ## Issue-ready backlog
 
@@ -195,5 +197,5 @@ Before each PR in both code repos: `npm run lint`, `npx tsc --noEmit`, `npm test
 | Tracker data leaks | Low | Server-side member guard; every query scoped to session user; cross-user route tests |
 | Reminder spam | Medium | Preference, 48-hour window, `reminderSentAt`, idempotency test |
 | Vercel cron/runtime exceeds limits | Medium | Three sources first, sequential per host, bounded boards, counts and duration logs |
-| Volunteer schedule slips | Medium | MVP excludes manual partner entry and advanced ranking; freeze on Nov 8 |
+| Volunteer schedule slips | Medium | MVP excludes manual partner entry and advanced ranking; freeze before demo day |
 | Existing dashboard `applications` name confuses users | Medium | Call new member section “Opportunities”; reserve existing exec “Applications” for club applications |
