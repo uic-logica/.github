@@ -9,8 +9,6 @@
 >
 > Join us: [Discord](DISCORD_URL) · [Instagram](INSTAGRAM_URL) · [LinkedIn](LINKEDIN_URL)
 
-**Software lead:** Nicolas Rufino · [@nicolasrufino](https://github.com/nicolasrufino): owns every product, sets the deadlines, reviews and merges.
-
 [**Live site**](https://logicauic.org) · [Projects](https://logicauic.org/projects) · [Roadmap](https://github.com/uic-logica/.github/blob/main/ROADMAP.md) · [How we work](https://github.com/uic-logica/.github/blob/main/CONTRIBUTING.md)
 
 | 120 | 85 | 13 | 5 weeks |
