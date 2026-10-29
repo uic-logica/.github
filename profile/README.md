@@ -4,7 +4,8 @@
 
 **Latinx and underrepresented students in computing at the University of Illinois Chicago.** We run the club on software we build ourselves, in the open.
 
-**Software lead:** Nicolas Rufino · [@nicolasrufino](https://github.com/nicolasrufino): owns every product, sets the deadlines, reviews and merges.
+> [!IMPORTANT]
+> **Software Teams are open.** Four teams, real products, shipped in the open. Pick the one you want to build and apply: **[logicauic.org/projects →](https://logicauic.org/projects)**
 
 [**Live site**](https://logicauic.org) · [Projects](https://logicauic.org/projects) · [Roadmap](https://github.com/uic-logica/.github/blob/main/ROADMAP.md) · [How we work](https://github.com/uic-logica/.github/blob/main/CONTRIBUTING.md)
 
@@ -18,7 +19,7 @@
 
 **What we've shipped (Aug–Oct 2026):** a full club platform: public site, @uic.edu accounts, a member dashboard, an exec workspace (money, outreach, insights, applications, speakers, event editing), speaker intake with an availability calendar, and the V4 design across all of it, in light and dark.
 
-**What we're building next (Fall 2026):** four products that help students get hired, one team each.
+**What we're building next (Fall 2026):** four products, one team each.
 
 | | Product | The hard part |
 |:--:|---|---|
@@ -71,5 +72,7 @@ Contributions are **members only**.
 | [skills](https://github.com/uic-logica/skills) | Claude Code commands for our workflow |
 
 ---
+
+**Join us:** [Discord](https://discord.gg/nRhY72ADNh) · [Instagram](https://www.instagram.com/logicaatuic/) · [LinkedIn](https://www.linkedin.com/company/logicaatuic/)
 
 <sub>Owner: Nicolas Rufino · Last reviewed: Oct 15, 2026</sub>

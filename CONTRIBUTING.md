@@ -4,8 +4,6 @@
 
 **Members only.** Contributions come from LOGICA @ UIC members in the `uic-logica` GitHub org. Pull requests from outside the org are closed. Not a member? [Join LOGICA](https://logicauic.org/join) first.
 
-**Lead:** Nicolas Rufino ([@nicolasrufino](https://github.com/nicolasrufino)): sets priorities and deadlines, reviews and merges.
-
 ## The workflow
 
 ```mermaid
