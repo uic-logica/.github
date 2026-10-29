@@ -73,6 +73,6 @@ Contributions are **members only**.
 
 ---
 
-**Join us:** [Discord](DISCORD_URL) · [Instagram](INSTAGRAM_URL) · [LinkedIn](LINKEDIN_URL)
+**Join us:** [Discord](https://discord.gg/nRhY72ADNh) · [Instagram](https://www.instagram.com/logicaatuic/) · [LinkedIn](https://www.linkedin.com/company/logicaatuic/)
 
 <sub>Owner: Nicolas Rufino · Last reviewed: Oct 15, 2026</sub>
