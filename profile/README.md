@@ -6,8 +6,6 @@
 
 > [!IMPORTANT]
 > **Software Teams are open.** Four teams, real products, shipped in the open. Pick the one you want to build and apply: **[logicauic.org/projects →](https://logicauic.org/projects)**
->
-> Join us: [Discord](DISCORD_URL) · [Instagram](INSTAGRAM_URL) · [LinkedIn](LINKEDIN_URL)
 
 [**Live site**](https://logicauic.org) · [Projects](https://logicauic.org/projects) · [Roadmap](https://github.com/uic-logica/.github/blob/main/ROADMAP.md) · [How we work](https://github.com/uic-logica/.github/blob/main/CONTRIBUTING.md)
 
@@ -74,5 +72,7 @@ Contributions are **members only**.
 | [skills](https://github.com/uic-logica/skills) | Claude Code commands for our workflow |
 
 ---
+
+**Join us:** [Discord](DISCORD_URL) · [Instagram](INSTAGRAM_URL) · [LinkedIn](LINKEDIN_URL)
 
 <sub>Owner: Nicolas Rufino · Last reviewed: Oct 15, 2026</sub>
