@@ -10,7 +10,7 @@ Every posting rewards different keywords, so members need a resume tailored to e
 
 ## Goals and non-goals
 
-| Goals (v1.0, Nov 20, 2026) | Non-goals |
+| Goals (v1.0) | Non-goals |
 |---|---|
 | One proven single-page template | Multiple visual themes |
 | MCP tools: `get_profile`, `get_posting`, `get_template`, `render_resume` | Running any AI on club infrastructure |
@@ -47,12 +47,12 @@ sequenceDiagram
 
 ## Cross-cutting concerns
 
-- **Privacy (reviewed Fri, Nov 6, 2026):** resumes and LinkedIn data are personal. Tools only return the caller's own data, tokens are revocable, and there's a delete path.
+- **Privacy (reviewed before launch):** resumes and LinkedIn data are personal. Tools only return the caller's own data, tokens are revocable, and there's a delete path.
 - **Security:** `render_resume` validates input against the schema, and there are no file writes outside the member's records.
 
 ## Milestones
 
-[MVP, Oct 30, 2026](https://github.com/uic-logica/backend/milestone/3) → [v1.0, Nov 20, 2026](https://github.com/uic-logica/backend/milestone/4).
+[MVP](https://github.com/uic-logica/backend/milestone/3) → [v1.0](https://github.com/uic-logica/backend/milestone/4).
 
 ## Open questions
 

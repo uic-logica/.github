@@ -4,7 +4,7 @@
 
 ## Ship target
 
-By **Thu Dec 3, 2026**, one consent-reviewed event has a phone-friendly 3D replay plus a captioned 2D fallback. The page works without loading 3D until the visitor asks.
+By its first demo day (date TBD), one consent-reviewed event has a phone-friendly 3D replay plus a captioned 2D fallback. The page works without loading 3D until the visitor asks.
 
 Read [research.md](research.md) for the stack decision and evidence. All paths below marked **proposed** are new; the existing repo paths were verified Oct 1.
 
@@ -128,18 +128,20 @@ Do not import the renderer in the initial bundle. Show `Load 3D replay (42 MB)` 
 
 ## Schedule
 
-| Dates | Existing milestone | Deliverable |
+Dates are TBD: they're set at kickoff. Weeks count from kickoff.
+
+| Week | Milestone | Deliverable |
 |---|---|---|
-| Thu Oct 1 | Kickoff | Assign capture, frontend, backend, QA owners; confirm devices and consent-review owner |
-| Oct 8–15 | Mini design sprint | Test capture on two phones; compare Scaniverse exports; paper-test viewer/fallback; decide privacy copy |
-| Oct 16–27 | Design doc + review | Approve SPZ/PlayCanvas/Blob architecture, schema, upload threat model, capture consent, size/device budgets |
-| Oct 28–Nov 1 | Build week 1 | Empty-room golden asset; schema migration; public replay read contract |
-| Nov 2–8 | Build week 2 | Authorized direct upload and callback; unit tests |
-| Nov 9–15 | Build week 3 | Lazy viewer, poster, fallback, loading/error states |
-| Nov 16–22 | Build week 4 | Board publish flow; real capture; privacy review; Playwright path |
-| Nov 23–29 | Build week 5 | Physical-device performance, accessibility, deletion drill, docs; feature complete Sun Nov 29 |
-| Nov 30–Dec 1 | Hardening / existing code freeze Tue Dec 1 | Fix only; launch checklist; rehearse offline fallback |
-| Thu Dec 3 | Demo day | Live 3D replay plus captioned 2D backup |
+| 1 | Kickoff | Assign capture, frontend, backend, QA owners; confirm devices and consent-review owner |
+| 2 | Mini design sprint | Test capture on two phones; compare Scaniverse exports; paper-test viewer/fallback; decide privacy copy |
+| 3 | Design doc + review | Approve SPZ/PlayCanvas/Blob architecture, schema, upload threat model, capture consent, size/device budgets |
+| 4 | Build week 1 | Empty-room golden asset; schema migration; public replay read contract |
+| 5 | Build week 2 | Authorized direct upload and callback; unit tests |
+| 6 | Build week 3 | Lazy viewer, poster, fallback, loading/error states |
+| 7 | Build week 4 | Board publish flow; real capture; privacy review; Playwright path |
+| 8 | Build week 5 | Physical-device performance, accessibility, deletion drill, docs; feature complete |
+| 9 | Hardening / code freeze | Fix only; launch checklist; rehearse offline fallback |
+| 10 | Demo day | Live 3D replay plus captioned 2D backup |
 
 ## Issue-ready backlog
 
@@ -223,4 +225,4 @@ Use a tiny, consent-safe SPZ fixture for automation; never commit the real raw e
 - [ ] Captioned 2D fallback, alt text, keyboard controls, reduced motion
 - [ ] Vitest and Playwright coverage green; lint and typecheck green in both repos
 - [ ] Unpublish/delete drill complete; cost dashboard checked
-- [ ] [Launch checklist](launch-checklist.md) signed off before Thu Dec 3
+- [ ] [Launch checklist](launch-checklist.md) signed off before demo day

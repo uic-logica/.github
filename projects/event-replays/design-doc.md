@@ -10,7 +10,7 @@ People who miss an event only get photos. This project turns a two-minute phone 
 
 ## Goals and non-goals
 
-| Goals (demo Dec 3, 2026) | Non-goals |
+| Goals (first demo) | Non-goals |
 |---|---|
 | One real event captured and viewable in the browser | Live streaming |
 | Faces blurred in every frame before training | Face recognition of any kind |

@@ -4,39 +4,7 @@
 
 ## Fall 2026 at a glance
 
-```mermaid
-gantt
-  title Fall 2026 — LOGICA Software Teams
-  dateFormat YYYY-MM-DD
-  axisFormat %b %d
-  section All teams
-  Kickoff                       :milestone, 2026-10-01, 0d
-  OKRs published                :milestone, 2026-10-06, 0d
-  Mid-term OKR check-in         :milestone, 2026-11-03, 0d
-  Showcase (all demos)          :crit, milestone, 2026-12-03, 0d
-  OKR grades                    :milestone, 2026-12-11, 0d
-  section Opportunity board
-  Spike + design doc            :2026-10-05, 7d
-  Build to MVP                  :2026-10-13, 18d
-  Harden + freeze               :2026-10-31, 12d
-  Demo day                      :crit, milestone, 2026-11-12, 0d
-  Retro                         :milestone, 2026-11-17, 0d
-  section Resume builder
-  Spike + design doc            :2026-10-05, 7d
-  Build to MVP                  :2026-10-14, 17d
-  Privacy review + harden       :2026-10-31, 19d
-  Demo day                      :crit, milestone, 2026-11-19, 0d
-  Retro                         :milestone, 2026-11-23, 0d
-  section Event replays
-  Mini design sprint            :2026-10-08, 8d
-  Design doc + review           :2026-10-16, 12d
-  Build                         :2026-10-28, 33d
-  Demo day                      :crit, milestone, 2026-12-03, 0d
-  section Mock interviewer
-  One-pager + design doc        :2026-11-02, 14d
-  Spike + prototype             :2026-11-17, 16d
-  Preview demo                  :crit, milestone, 2026-12-03, 0d
-```
+**TBD.** No team has started yet. Each team's kickoff, demo day and retro are set when it starts, and get added here as we move on.
 
 ## The cycle every project runs
 
@@ -53,7 +21,7 @@ flowchart LR
 | **OKRs** | 1–2 objectives, ~3 key results, graded 0.0–1.0 in the repo. Committed = 1.0 expected; aspirational ≈ 0.7 | re:Work OKR guide; Google's OKR playbook |
 | **Design doc** | 1–3 pages: context, goals and non-goals, design, alternatives, privacy/security. Reviewed by the lead + one person from another team | "Design docs at Google" |
 | **Small PRs, fast review** | Aim under ~300 lines; reviewers answer within 48 h; optional comments start with `Nit:` | Google eng-practices |
-| **Release train** | Merged work ships every Friday from Oct 23; tag a GitHub Release | *Software Engineering at Google*, ch. 24 |
+| **Release train** | Merged work ships every Friday once teams start; tag a GitHub Release | *Software Engineering at Google*, ch. 24 |
 | **Code freeze** | 3–4 days before each demo, fixes only | Launch practice |
 | **Launch checklist** | ~12 boxes incl. privacy (resumes, LinkedIn, MCP tokens) | SRE book, "Reliable product launches" |
 | **Weekly snippet** | One status file per team every Monday; Discord check-ins every 2 days stay | Google Snippets |

@@ -17,7 +17,7 @@ Observed facts below come from the linked pages or the repos named in [build-pla
 | [DeepInterview](https://github.com/ngoanpv/DeepInterview) | Voice-first, multilingual, pre-call planning, rubric scorecard after the call | Separate the fast interview loop from slower evaluation |
 | [karanjot-gaidu/ai-mock-interviewer](https://github.com/karanjot-gaidu/ai-mock-interviewer) | Next.js + AI SDK, STT chunks, code execution, server-only hidden tests | Never ship hidden evaluation data to the browser |
 
-**Inference:** the common useful loop is plan → one question at a time → adaptive follow-up → structured feedback. Video, avatars, emotion analysis, and covert assistance do not improve the Dec 3 proof.
+**Inference:** the common useful loop is plan → one question at a time → adaptive follow-up → structured feedback. Video, avatars, emotion analysis, and covert assistance do not improve the proof.
 
 ## Interaction modes
 
@@ -121,8 +121,8 @@ Accessibility baseline: full keyboard flow, visible focus, labeled controls, `ar
 
 The paired frontend currently sets `Permissions-Policy: ... microphone=()` in `next.config.ts`. Voice work must deliberately change and test that policy; v0 text requires no change.
 
-## Recommended Dec 3 v0
+## Recommended v0
 
 Ship one authenticated, 10-minute **text behavioral interview** in the existing dashboard, tailored to a tracker role when available and otherwise a member-selected role. Stream short Claude Sonnet 5.5 interviewer turns through the backend; save the transcript; generate one structured STAR-based report with evidence and three improvements; add delete and 30-day expiry; enforce the $20 operating threshold.
 
-Why: it proves the product’s unique loop—role-aware practice plus useful feedback—inside the real auth, database, and dashboard. It also fits Nov 17–Dec 2 without adding microphone compatibility, audio consent/retention, realtime transport, or untrusted-code execution. Voice, MCP exposure, and coding rounds become measured Spring 2027 proposals rather than Dec 3 dependencies.
+Why: it proves the product’s unique loop—role-aware practice plus useful feedback—inside the real auth, database, and dashboard. It also fits the short build window without adding microphone compatibility, audio consent/retention, realtime transport, or untrusted-code execution. Voice, MCP exposure, and coding rounds become measured Spring 2027 proposals rather than first-demo dependencies.

@@ -30,53 +30,19 @@ flowchart LR
 **Rules:** public APIs and lists only — no scraping sites whose terms forbid it (LinkedIn, Indeed, Handshake).
 **You learn:** scraping, scheduled jobs, data pipelines, search.
 
-## Timeline — Fall 2026
+## Timeline
 
-New to these terms? See [words we use](../../docs/how-we-run-projects/README.md#words-we-use).
-
-```mermaid
-gantt
-  title Opportunity board — Fall 2026
-  dateFormat YYYY-MM-DD
-  axisFormat %b %d
-  Kickoff                 :milestone, 2026-10-01, 0d
-  Spike                   :2026-10-05, 5d
-  Design doc              :2026-10-05, 7d
-  Design review           :milestone, 2026-10-13, 0d
-  Build to MVP            :2026-10-13, 17d
-  MVP (internal preview)  :milestone, 2026-10-30, 0d
-  Harden                  :2026-10-31, 8d
-  Code freeze             :milestone, 2026-11-08, 0d
-  Demo day                :crit, milestone, 2026-11-12, 0d
-  Public v1.0             :milestone, 2026-11-13, 0d
-  Retro                   :milestone, 2026-11-17, 0d
-  v1.1 at showcase        :milestone, 2026-12-03, 0d
-```
-
-| Milestone | Date |
-|---|---|
-| Kickoff | Thu Oct 1 |
-| OKRs published | Tue Oct 6 |
-| Spike | Oct 5–9 |
-| Design doc due | Sun Oct 11 |
-| Design review | Tue Oct 13 |
-| MVP · internal preview | Fri Oct 30 |
-| Code freeze | Sun Nov 8 |
-| **Demo day** | **Thu Nov 12** |
-| Public v1.0 | Fri Nov 13 |
-| Retro | Tue Nov 17 |
-| Showcase (v1.1) | Thu Dec 3 |
-| OKR grades | Fri Dec 11 |
+**TBD.** The team hasn't started yet. Dates are set once people are placed and the team kicks off, and get added here as we move on.
 
 ## Artifacts
 
 | File | What | Status |
 |---|---|---|
-| [okrs.md](okrs.md) | Objectives and key results, graded 0–1 | Due Tue Oct 6 |
+| [okrs.md](okrs.md) | Objectives and key results, graded 0–1 | Due at kickoff |
 | [design-doc.md](design-doc.md) | 1–3 page design doc | See timeline |
 | [research.md](research.md) | Prior art, source policy and tagging rules | Reviewed Oct 1 |
 | [build-plan.md](build-plan.md) | Architecture, schedule, backlog, risks and tests | Ready for issues |
-| [status/](status/) | Weekly snippet every Monday | From Mon Oct 12 |
+| [status/](status/) | Weekly snippet every Monday | Once the team starts |
 | [launch-checklist.md](launch-checklist.md) | Must pass before the public release | Before the demo |
-| [demos/](demos/) | Demo day writeup, slides, video | 2026-11-12 |
+| [demos/](demos/) | Demo day writeup, slides, video | TBD |
 | [retro.md](retro.md) | Blameless retro and findings | After the demo |

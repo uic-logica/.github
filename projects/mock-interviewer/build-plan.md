@@ -130,18 +130,18 @@ Add an `Interview` component under `src/components/dashboard/`, a member navigat
 
 Rates and the no-markup Gateway model come from the [Claude Sonnet 5.5 model page](https://vercel.com/ai-gateway/models/claude-sonnet-5.5) and [Gateway pricing](https://vercel.com/docs/ai-gateway/pricing). Recompute using real usage after the spike. Enforce $20 in the database before starting; warn maintainers at $15; disable auto top-up; reserve $5 for in-flight requests and accounting drift. Function/Postgres costs are not modeled because the club’s plan and incremental usage were not found; **(verify)** before pilot.
 
-## Fall 2026 plan
+## Plan
 
-Keep the existing dates; tasks before Nov 17 are design/preparation, and implementation runs Nov 17–Dec 2.
+Dates are TBD: they're set at kickoff. Weeks count from kickoff. Weeks 1–2 are design and preparation; implementation follows the design review.
 
 | Week | Outcome |
 |---|---|
-| Nov 2–8 | One-pager due Nov 8: confirm v0 user, behavioral scope, privacy promise, success metric, and demo story |
-| Nov 9–15 | Design doc due Nov 15: approve schema/routes/rubric, author licensed question fixtures, threat-model ownership and cost paths |
-| Nov 16–22 | Design review Nov 17; spike AI SDK streaming with a fake provider first, then one real Gateway call; land additive schema/auth/limits |
-| Nov 23–29 | Build dashboard setup/active/history/feedback, deterministic evaluation, delete path, retention job, and integration tests |
-| Nov 30–Dec 2 | Three-member internal preview; accessibility/phone/keyboard/error QA; fix only; rehearse seeded demo and fallback recording |
-| Thu Dec 3 | Preview demo: one end-to-end round, evidence-based feedback, cost/retention controls, and known gaps |
+| 1 | One-pager due: confirm v0 user, behavioral scope, privacy promise, success metric, and demo story |
+| 2 | Design doc due: approve schema/routes/rubric, author licensed question fixtures, threat-model ownership and cost paths |
+| 3 | Design review; spike AI SDK streaming with a fake provider first, then one real Gateway call; land additive schema/auth/limits |
+| 4 | Build dashboard setup/active/history/feedback, deterministic evaluation, delete path, retention job, and integration tests |
+| 5 | Three-member internal preview; accessibility/phone/keyboard/error QA; fix only; rehearse seeded demo and fallback recording |
+| 6 | Preview demo: one end-to-end round, evidence-based feedback, cost/retention controls, and known gaps |
 
 ## Spring 2027 proposal — path to v1.0
 
@@ -234,7 +234,7 @@ Output per dimension: `score` 1–5 or `not_observed`, `evidenceTurnIds`, `stren
 | Prompt injection reveals hidden data | M / M | Server-owned prompts/questions; output schema; never send hidden fields to client | Eval red-team failure / Backend |
 | Transcript contains sensitive data | M / H | Pre-session warning, owner-only access, 30-day deletion, immediate delete, content-free logs | Privacy complaint / Lead |
 | Model outage/slow stream | M / M | Persist answer first; retryable state; fake/seeded demo; no duplicate charge on replay | p95 >8 s TTFT (proposal) / Backend |
-| Schedule too short | H / H | Text behavioral only; voice/coding/MCP deferred; freeze after preview | Core flow incomplete Nov 29 / Lead |
+| Schedule too short | H / H | Text behavioral only; voice/coding/MCP deferred; freeze after preview | Core flow incomplete a week before the preview / Lead |
 | Accessibility regression | M / H | Text is primary; keyboard and screen-reader checks; stable focus and polite announcements | QA checklist failure / Frontend + QA |
 | Question copyright issue | L / H | Original fixtures + provenance; O*NET attribution; phrase check; license review | Unclear provenance / QA |
 | Platform WebSocket contradiction | M / L for v0 | Use HTTP streaming; verify Vercel support only before voice | Voice phase starts / Backend |

@@ -12,7 +12,7 @@ Members hunt for internships across dozens of career pages, miss deadlines, and 
 
 ## Goals and non-goals
 
-| Goals (v1.0, Nov 13, 2026) | Non-goals |
+| Goals (v1.0) | Non-goals |
 |---|---|
 | Pull roles daily from at least 3 public sources, deduped | Scraping sites whose terms forbid it (LinkedIn, Indeed, Handshake) |
 | Tag each role by class year, field, location and sponsorship | Ranking roles with AI |
@@ -62,7 +62,7 @@ flowchart LR
 
 ## Milestones
 
-[MVP, Oct 30, 2026](https://github.com/uic-logica/backend/milestone/1) → [v1.0, Nov 13, 2026](https://github.com/uic-logica/backend/milestone/2). Dates are in the [project timeline](README.md#timeline--fall-2026).
+[MVP](https://github.com/uic-logica/backend/milestone/1) → [v1.0](https://github.com/uic-logica/backend/milestone/2). Dates are TBD, set at kickoff: [project timeline](README.md#timeline).
 
 ## Decisions and open questions
 
